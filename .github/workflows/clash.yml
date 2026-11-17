@@ -28,6 +28,11 @@ jobs:
           /tmp/apkeep -a com.supercell.clashroyale -d apk-pure /tmp/crout
           cd /tmp/crout && unzip -o -q com.supercell.clashroyale.xapk -d x
           ls -la /tmp/crout/x
+      - name: kvm
+        run: |
+          ls -l /dev/kvm || true
+          sudo chmod 666 /dev/kvm || true
+          ls -l /dev/kvm || true
       - name: emu
         uses: reactivecircus/android-emulator-runner@v2
         with:
