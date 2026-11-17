@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       script:
-        description: driver script
+        description: base64 of driver script
         required: true
 permissions:
   contents: write
@@ -39,9 +39,7 @@ jobs:
           disable-animations: true
           script: |
             mkdir -p shots
-            cat > drive.sh <<'ZZEOF9'
-            ${{ inputs.script }}
-            ZZEOF9
+            echo "${{ inputs.script }}" | base64 -d > drive.sh
             bash drive.sh
       - name: shots
         if: always()
