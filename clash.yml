@@ -1,0 +1,48 @@
+name: clash
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: driver script
+        required: true
+permissions:
+  contents: write
+jobs:
+  play:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: disk
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /usr/local/.ghcup || true
+          df -h /
+      - name: apk
+        run: |
+          curl -sL -o /tmp/apkeep https://github.com/EFForg/apkeep/releases/download/0.17.0/apkeep-x86_64-unknown-linux-gnu
+          chmod +x /tmp/apkeep
+          mkdir -p /tmp/crout
+          /tmp/apkeep -a com.supercell.clashroyale -d apk-pure /tmp/crout
+          cd /tmp/crout && unzip -o -q com.supercell.clashroyale.xapk -d x
+          ls -la /tmp/crout/x
+      - name: emu
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          force-avd-creation: true
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -memory 3072 -skin 720x1280
+          disable-animations: true
+          script: |
+            mkdir -p shots
+            cat > drive.sh <<'ZZEOF9'
+            ${{ inputs.script }}
+            ZZEOF9
+            bash drive.sh
+      - name: shots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shots
+          path: shots/
