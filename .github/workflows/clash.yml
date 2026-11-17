@@ -10,12 +10,15 @@ permissions:
 jobs:
   play:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - name: disk
         run: |
-          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /usr/local/.ghcup || true
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup || true
+          sudo rm -rf /usr/local/lib/android
+          sudo mkdir -p /usr/local/lib/android
+          sudo chown -R runner:runner /usr/local/lib/android
           df -h /
       - name: apk
         run: |
