@@ -40,7 +40,7 @@ jobs:
           target: google_apis
           arch: x86_64
           force-avd-creation: true
-          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -memory 3072 -skin 720x1280
+          emulator-options: -no-snapshot-save -no-window -gpu guest -noaudio -no-boot-anim -memory 3072 -skin 720x1280
           disable-animations: true
           script: |
             mkdir -p shots
