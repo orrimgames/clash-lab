@@ -10,7 +10,7 @@ permissions:
 jobs:
   play:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - name: disk
@@ -36,9 +36,9 @@ jobs:
       - name: emu
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 31
+          api-level: 30
           target: google_apis
-          arch: x86_64
+          arch: arm64-v8a
           force-avd-creation: true
           emulator-options: -no-snapshot-save -no-window -gpu guest -noaudio -no-boot-anim -memory 3072 -skin 720x1280
           disable-animations: true
