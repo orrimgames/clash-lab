@@ -10,7 +10,7 @@ permissions:
 jobs:
   play:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - name: disk
@@ -40,6 +40,7 @@ jobs:
           target: google_apis
           arch: arm64-v8a
           force-avd-creation: true
+          emulator-boot-time-out-sec: 3600
           emulator-options: -no-snapshot-save -no-window -gpu guest -noaudio -no-boot-anim -memory 3072 -skin 720x1280
           disable-animations: true
           script: |
