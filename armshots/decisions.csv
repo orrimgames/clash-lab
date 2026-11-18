@@ -79,3 +79,5 @@ time,match,elixir,opp_elixir_lo,opp_elixir_hi,slot,card,x,y,score,reason,capture
 1673.049,14,3.363,0.000,7.000,2,archers,245,650,5.200,defend_nearest,853.540,0.335
 1823.018,16,10.000,5.238,10.000,3,mini_pekka,170,760,2.000,build_left_push,203.905,0.936
 1824.868,16,6.436,5.899,10.000,3,musketeer,245,772,7.700,defend_nearest,185.836,0.294
+1831.465,16,4.651,0.350,9.701,3,minions,475,650,7.200,defend_nearest,179.942,0.313
+1835.938,16,3.488,1.948,10.000,0,archers,475,757,5.900,defend_nearest,483.729,0.301
