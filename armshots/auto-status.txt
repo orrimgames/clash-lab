@@ -1,1 +1,1 @@
-1339 fikova_sequence ladder=False
+1361 result ladder=False
