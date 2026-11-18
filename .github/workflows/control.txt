@@ -1,1 +1,1 @@
-{"seq":299,"op":"batch","args":[{"op":"tap","args":[350,885]},{"op":"text","args":["inboxexqcgg@mail.instinct.com"]},{"op":"keyevent","args":[4]},{"op":"wait","seconds":1},{"op":"tap","args":[525,1050]}]}
+{"seq":300,"op":"batch","args":[{"op":"tap","args":[360,744]},{"op":"wait","seconds":1},{"op":"tap","args":[648,70]},{"op":"wait","seconds":1},{"op":"tap","args":[643,72]},{"op":"wait","seconds":1},{"op":"tap","args":[360,1000]}]}
