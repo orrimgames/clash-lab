@@ -3,3 +3,4 @@
 14:24:57 api32-started
 14:25:29 booted
 14:25:34 stock-bridge-unmodified
+14:25:53 downloading-arm64
