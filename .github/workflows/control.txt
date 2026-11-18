@@ -1,1 +1,1 @@
-{"seq":298,"op":"tap","args":[170,385]}
+{"seq":299,"op":"batch","args":[{"op":"tap","args":[350,885]},{"op":"text","args":["inboxexqcgg@mail.instinct.com"]},{"op":"keyevent","args":[4]},{"op":"wait","seconds":1},{"op":"tap","args":[525,1050]}]}
