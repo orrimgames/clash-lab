@@ -87,3 +87,6 @@ time,match,elixir,opp_elixir_lo,opp_elixir_hi,slot,card,x,y,score,reason,capture
 1874.249,16,4.817,6.669,10.000,3,musketeer,245,820,7.700,defend_nearest,800.418,0.302
 1878.491,16,3.363,8.184,10.000,0,minions,245,820,8.600,defend_nearest,772.242,1.278
 1879.350,16,3.654,0.117,9.234,1,arrows,293,844,8.000,defend_nearest,226.306,0.303
+1886.748,16,3.446,2.759,10.000,0,archers,245,820,6.600,defend_nearest,560.870,0.327
+1887.702,16,3.633,0.000,9.000,1,arrows,215,859,8.000,defend_nearest,611.195,0.399
+1895.997,16,3.301,2.962,10.000,0,knight,245,820,7.600,defend_nearest,927.715,0.296
