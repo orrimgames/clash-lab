@@ -53,10 +53,19 @@ jobs:
           adb logcat -c
           adb shell cmd package resolve-activity --brief com.supercell.clashroyale > armshots/resolve.txt 2>&1
           ACTIVITY=$(tr -d '\r' < armshots/resolve.txt | grep '/' | tail -1)
+          adb shell screenrecord --time-limit 180 --bit-rate 4000000 /sdcard/clash-launch.mp4 > armshots/record.txt 2>&1 &
+          RECORDPID=$!
+          sleep 2
           timeout 30 adb shell am start -W -n "$ACTIVITY" > armshots/launch.txt 2>&1
           adb shell dumpsys package com.supercell.clashroyale > armshots/package.txt
           adb shell pm list packages -f > armshots/packages.txt
-          for i in $(seq 1 6); do sleep 20; adb exec-out screencap -p > armshots/$(printf '%03d' $((i+1)))-game.png; done
+          sleep 15
+          adb shell input tap 550 400
+          sleep 3
+          adb shell input tap 360 815
+          for i in $(seq 1 7); do sleep 20; adb exec-out screencap -p > armshots/$(printf '%03d' $((i+1)))-game.png; done
+          wait $RECORDPID
+          adb pull /sdcard/clash-launch.mp4 armshots/clash-launch.mp4
           adb logcat -b all -d > armshots/logcat.txt
           adb shell dumpsys activity activities > armshots/activity.txt
       - name: Diagnostics
