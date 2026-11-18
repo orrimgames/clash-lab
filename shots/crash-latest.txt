@@ -1,0 +1,3 @@
+--------- beginning of crash
+11-18 14:26:49.199  5078  5078 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7324c7cd0bd4 in tid 5078 (com.android.nfc), pid 5078 (com.android.nfc)
+11-18 14:26:49.233  5078  5078 F libc    : crash_dump helper failed to exec, or was killed
