@@ -1,0 +1,5 @@
+time,match,elixir,opp_elixir_lo,opp_elixir_hi,slot,card,x,y,score,reason,capture_ms,decision_ms
+636.912,1,8.367,5.098,10.000,3,minions,245,820,8.600,defend_nearest,171.937,0.739
+637.823,1,8.305,0.000,5.000,0,knight,245,820,7.600,defend_nearest,322.075,0.368
+639.779,1,5.315,0.698,6.397,3,minions,475,817,8.600,defend_nearest,828.018,0.662
+641.117,1,6.249,1.176,7.353,0,arrows,161,787,8.000,defend_nearest,1000.010,0.437
