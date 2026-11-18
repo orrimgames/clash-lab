@@ -27,7 +27,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff212121
         backgroundColor=ff303030 statusBarColor=ff000000 navigationBarColor=808080
        backgroundColorFloating=ff424242
-      launchFailed=false launchCount=1 lastLaunchTime=-16m53s415ms
+      launchFailed=false launchCount=1 lastLaunchTime=-17m3s30ms
       mHaveState=false mIcicle=null
       state=RESUMED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -35,7 +35,7 @@ Display #0 (activities from top to bottom):
       frozenBeforeDestroy=false forceNewConfig=false
       mActivityType=standard
       mImeInsetsFrozenUntilStartInput=false
-      windows=[Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}, Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}]
+      windows=[Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}, Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp EXITING}]
       windowType=2 waitingToShow=true
       mOccludesParent=true
       overrideOrientation=SCREEN_ORIENTATION_SENSOR_PORTRAIT
@@ -43,7 +43,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
       mNumInterestingWindows=2 mNumDrawnWindows=2 allDrawn=true lastAllDrawn=true)
       startingData=null firstWindowDrawn=true mIsExiting=false
-      nowVisible=true lastVisibleTime=-16m52s803ms
+      nowVisible=true lastVisibleTime=-17m2s418ms
       resizeMode=RESIZE_MODE_RESIZEABLE
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_SUPPORTED_METADATA
@@ -77,7 +77,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
         backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
        backgroundColorFloating=fff1f0f7
-      launchFailed=false launchCount=0 lastLaunchTime=-19m38s823ms
+      launchFailed=false launchCount=0 lastLaunchTime=-19m48s437ms
       mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=6088]
       state=STOPPED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -93,7 +93,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
       mAppStopped=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-      nowVisible=false lastVisibleTime=-16m55s715ms
+      nowVisible=false lastVisibleTime=-17m5s329ms
       resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
@@ -129,7 +129,7 @@ Display #0 (activities from top to bottom):
         taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
           backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
          backgroundColorFloating=fff1f0f7
-        launchFailed=false launchCount=0 lastLaunchTime=-25m32s502ms
+        launchFailed=false launchCount=0 lastLaunchTime=-25m42s117ms
         mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=5016]
         state=STOPPED delayedResume=false finishing=false
         keysPaused=false inHistory=true idle=true
@@ -145,7 +145,7 @@ Display #0 (activities from top to bottom):
         mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
         mAppStopped=true
         mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-        nowVisible=false lastVisibleTime=-20m17s189ms
+        nowVisible=false lastVisibleTime=-20m26s804ms
         connections={ConnectionRecord{14cb8ed u0 com.android.launcher3/com.android.quickstep.TouchInteractionService:@6c32b04 flags=0x0}}
         resizeMode=RESIZE_MODE_RESIZEABLE
         mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
@@ -181,8 +181,8 @@ ActivityTaskSupervisor state:
   mLastOrientationSource=WindowedMagnification:0:31@117040931
   deepestLastOrientationSource=ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
   overrideConfig={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.35 fontWeightAdjustment=0}
-  mLayoutSeq=203
-  mCurrentFocus=Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+  mLayoutSeq=208
+  mCurrentFocus=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
   mFocusedApp=ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
 
   mHoldScreenWindow=null
@@ -193,8 +193,6 @@ ActivityTaskSupervisor state:
   displayId=0
   mWallpaperTarget=null
   mLastWallpaperX=0.0 mLastWallpaperY=0.5
-
-  keepClearAreas={Rect(0, 658 - 720, 1184)}
 
   Display areas in top down Z order:
     * Leaf:36:36
@@ -267,8 +265,8 @@ ActivityTaskSupervisor state:
   rootHomeTask=Task=1
 
   PinnedTaskController
-    mIsImeShowing=true
-    mImeHeight=526
+    mIsImeShowing=false
+    mImeHeight=0
     mMinAspectRatio=0.41841003
     mMaxAspectRatio=2.39
 
@@ -291,16 +289,14 @@ ActivityTaskSupervisor state:
     mNavigationBarPosition=4
     mTopGestureHost=Window{df1ce2a u0 StatusBar}
     mBottomGestureHost=Window{18fb00e u0 NavigationBar0}
-    mFocusedWindow=Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
-    mTopFullscreenOpaqueWindowState=Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+    mFocusedWindow=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+    mTopFullscreenOpaqueWindowState=Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp EXITING}
     mSystemBarColorApps={ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}}
-    mNavBarColorWindowCandidate=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
-    mNavBarBackgroundWindowCandidate=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
     mLastStatusBarAppearanceRegions=
-      AppearanceRegion{ bounds=[0,0][720,658]}
+      AppearanceRegion{ bounds=[0,0][720,1280]}
     mLastLetterboxDetails=
     mStatusBarBackgroundWindows=
-      Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+      Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp EXITING}
     mTopIsFullscreen=true
     mForceShowNavigationBarEnabled=false mAllowLockscreenWhenOn=false
     mRemoteInsetsControllerControlsSystemBars=false
@@ -348,7 +344,7 @@ ActivityTaskSupervisor state:
       mRoundedCornerFrame=Rect(0, 0 - 0, 0)
       mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(528, 0 - 692, 48) rotation=0}
       mDisplayShape=DisplayShape{ spec=42744253 displayWidth=720 displayHeight=1280 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}
-        InsetsSource id=c6c70001 type=navigationBars frame=[0,1184][720,1280] visible=true flags=
+        InsetsSource id=c6c70001 type=navigationBars frame=[0,1184][720,1280] visible=false flags=
         InsetsSource id=c6c70004 type=systemGestures frame=[0,0][0,0] visible=true flags=
         InsetsSource id=c6c70005 type=mandatorySystemGestures frame=[0,1184][720,1280] visible=true flags=
         InsetsSource id=c6c70006 type=tappableElement frame=[0,1184][720,1280] visible=true flags=
@@ -356,24 +352,23 @@ ActivityTaskSupervisor state:
         InsetsSource id=f6b50000 type=statusBars frame=[0,0][720,48] visible=false flags=
         InsetsSource id=f6b50005 type=mandatorySystemGestures frame=[0,0][720,48] visible=true flags=
         InsetsSource id=f6b50006 type=tappableElement frame=[0,0][720,48] visible=true flags=
-        InsetsSource id=3 type=ime frame=[0,658][720,1280] visibleFrame=[0,658][720,1280] visible=true flags=
+        InsetsSource id=3 type=ime frame=[0,658][720,1280] visibleFrame=[0,658][720,1280] visible=false flags=
     Control map:
-      PermanentControlTarget:
-        InsetsSourceControl: {c6c70001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96}}
-      Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}:
+      Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}:
         InsetsSourceControl: {3 mType=ime mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=0, right=0, bottom=622}}
+        InsetsSourceControl: {c6c70001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96}}
         InsetsSourceControl: {f6b50000 mType=statusBars mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0}}
     InsetsSourceProviders:
       ImeInsetsSourceProvider
-        mSource=InsetsSource id=3 type=ime frame=[0,658][720,1280] visibleFrame=[0,658][720,1280] visible=true flags=
+        mSource=InsetsSource id=3 type=ime frame=[0,658][720,1280] visibleFrame=[0,658][720,1280] visible=false flags=
         mSourceFrame=Rect(0, 658 - 720, 1280)
-        mControl=InsetsSourceControl mId=3 mType=ime mLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x9f1e060 mInitiallyVisible=false mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=0, right=0, bottom=622} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl mId=3 mType=ime mLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x64a1453 mInitiallyVisible=false mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=0, right=0, bottom=622} mSkipAnimationOnce=false
         mInsetsHint=Insets{left=0, top=0, right=0, bottom=622}
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{fb06f34 u0 InputMethod}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x9f1e060
-        mControlTarget=Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
-        mImeShowing=true
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x64a1453
+        mControlTarget=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+        mImeShowing=false
       InsetsSourceProvider
         mSource=InsetsSource id=f6b50006 type=tappableElement frame=[0,0][720,48] visible=true flags=
         mSourceFrame=Rect(0, 0 - 720, 48)
@@ -387,12 +382,12 @@ ActivityTaskSupervisor state:
       InsetsSourceProvider
         mSource=InsetsSource id=f6b50000 type=statusBars frame=[0,0][720,48] visible=false flags=
         mSourceFrame=Rect(0, 0 - 720, 48)
-        mControl=InsetsSourceControl mId=f6b50000 mType=statusBars mLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0x899f919 mInitiallyVisible=false mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl mId=f6b50000 mType=statusBars mLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0xaee2190 mInitiallyVisible=false mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0} mSkipAnimationOnce=false
         mInsetsHint=Insets{left=0, top=48, right=0, bottom=0}
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{df1ce2a u0 StatusBar}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0x899f919
-        mControlTarget=Window{52d49ad u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0xaee2190
+        mControlTarget=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
       InsetsSourceProvider
         mSource=InsetsSource id=c6c70024 type=systemGestures frame=[0,0][0,0] visible=true flags=
         mSourceFrame=Rect(0, 0 - 0, 0)
@@ -414,17 +409,17 @@ ActivityTaskSupervisor state:
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{18fb00e u0 NavigationBar0}
       InsetsSourceProvider
-        mSource=InsetsSource id=c6c70001 type=navigationBars frame=[0,1184][720,1280] visible=true flags=
+        mSource=InsetsSource id=c6c70001 type=navigationBars frame=[0,1184][720,1280] visible=false flags=
         mSourceFrame=Rect(0, 1184 - 720, 1280)
-        mControl=InsetsSourceControl mId=c6c70001 mType=navigationBars mLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0x5caddde mInitiallyVisible=true mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl mId=c6c70001 mType=navigationBars mLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0xafe5a89 mInitiallyVisible=true mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96} mSkipAnimationOnce=false
         mInsetsHint=Insets{left=0, top=0, right=0, bottom=96}
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{18fb00e u0 NavigationBar0}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0x5caddde
-        mControlTarget=PermanentControlTarget
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0xafe5a89
+        mControlTarget=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
   InsetsPolicy
     status: WINDOW_STATE_HIDDEN
-    nav: WINDOW_STATE_SHOWING
+    nav: WINDOW_STATE_HIDDEN
 
   KeyguardController:
     mKeyguardShowing=false
