@@ -68,3 +68,4 @@ time,match,elixir,opp_elixir_lo,opp_elixir_hi,slot,card,x,y,score,reason,capture
 1319.257,4,5.979,0.000,3.691,2,mini_pekka,245,697,11.100,defend_nearest,109.520,0.393
 1320.713,4,4.713,0.520,4.731,0,minions,245,694,8.600,defend_nearest,323.649,0.318
 1321.463,4,3.550,0.000,4.266,1,arrows,161,787,8.000,defend_nearest,353.546,0.319
+1328.964,4,3.239,2.679,9.624,3,knight,245,820,7.600,defend_nearest,258.446,0.661
