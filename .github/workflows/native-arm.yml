@@ -155,8 +155,8 @@ jobs:
                   ws=words();s=' '.join(w['text'] for w in ws).lower()
                   action=''
                   if 'got it' in s:
-            tap(550,400);action='fullscreen_notice'
-        elif 'your age' in s or 'how old' in s:
+                      tap(550,400);action='fullscreen_notice'
+                  elif 'your age' in s or 'how old' in s:
                       enable(False)
                       if not age:
                           adb('swipe',268,735,286,735,700);age=True;time.sleep(1)
