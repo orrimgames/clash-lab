@@ -1,0 +1,7 @@
+total 995696
+-rw-r--r-- 1 runner runner  49449050 Dec 31  1979 com.supercell.clashroyale.apk
+-rw-r--r-- 1 runner runner  65275094 Dec 31  1979 config.arm64_v8a.apk
+-rw-r--r-- 1 runner runner    123090 Dec 31  1979 config.en.apk
+-rw-r--r-- 1 runner runner    133667 Dec 31  1979 config.xxhdpi.apk
+-rw-r--r-- 1 runner runner 904590880 Dec 31  1979 install_time_asset_pack.apk
+-rw-r--r-- 1 runner runner      1682 Dec 31  1979 manifest.json
