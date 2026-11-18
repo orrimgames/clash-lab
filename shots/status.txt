@@ -1,1 +1,2 @@
 14:24:27 start-v54-play35-arm64
+14:24:27 installing-play35-image
