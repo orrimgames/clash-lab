@@ -1,1 +1,1 @@
-1570 tutorial_dialog ladder=False
+1589 tutorial_dialog ladder=False
