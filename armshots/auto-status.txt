@@ -1,1 +1,1 @@
-1419 earned_currency_upgrade ladder=False
+1496 name ladder=False
