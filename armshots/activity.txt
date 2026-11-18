@@ -1,9 +1,56 @@
 ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
 Display #0 (activities from top to bottom):
-  * Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+  * Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+    mLastPausedActivity: ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
     mLastNonFullscreenBounds=Rect(132, 256 - 588, 976)
     isSleeping=false
-    topResumedActivity=ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
+    topResumedActivity=ActivityRecord{7355739 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t10}
+    * Hist  #1: ActivityRecord{7355739 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t10}
+      packageName=com.android.permissioncontroller processName=com.android.permissioncontroller
+      launchedFromUid=10087 launchedFromPackage=com.supercell.clashroyale launchedFromFeature=null userId=0
+      app=ProcessRecord{923044b 671:com.android.permissioncontroller/u0a76}
+      Intent { act=android.content.pm.action.REQUEST_PERMISSIONS flg=0x800000 pkg=com.android.permissioncontroller cmp=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity (has extras) }
+      rootOfTask=false task=Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale}
+      taskAffinity=10076:com.android.permissioncontroller
+      mActivityComponent=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity
+      baseDir=/apex/com.android.permission/priv-app/PermissionController@UD2A.240505.001.W1/PermissionController.apk
+      dataDir=/data/user_de/0/com.android.permissioncontroller
+      stateNotNeeded=false componentSpecified=false mActivityType=standard
+      compat={320dpi} labelRes=0x7f130041 icon=0x7f0804d2 theme=0x7f140163
+      mLastReportedConfigurations:
+        mGlobalConfig={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.43 fontWeightAdjustment=0}
+        mOverrideConfig={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.1 fontWeightAdjustment=0}
+      CurrentConfiguration={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.1 fontWeightAdjustment=0}
+      resultTo=ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10} resultWho=@android:requestPermissions: resultCode=980002
+      taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
+        backgroundColor=fff1f0f7 statusBarColor=fff1f0f7 navigationBarColor=808080
+       backgroundColorFloating=fff1f0f7
+      launchFailed=false launchCount=1 lastLaunchTime=-7s876ms
+      mHaveState=false mIcicle=null
+      state=RESUMED delayedResume=false finishing=false
+      keysPaused=false inHistory=true idle=true
+      occludesParent=false noDisplay=false immersive=false launchMode=0
+      frozenBeforeDestroy=false forceNewConfig=false
+      mActivityType=standard
+      mImeInsetsFrozenUntilStartInput=false
+      windows=[Window{3a912d7 u0 com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}]
+      windowType=2 waitingToShow=true
+      mOccludesParent=false
+      overrideOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+      requestedOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+      mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
+      mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
+      startingData=null firstWindowDrawn=true mIsExiting=false
+      nowVisible=true lastVisibleTime=-7s796ms
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+      supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
+      configChanges=0x423
+      neverSandboxDisplayApis=false
+      alwaysSandboxDisplayApis=false
+      areBoundsLetterboxed=false
+      mCameraCompatControlState=hidden
+      mCameraCompatControlEnabled=false
     * Hist  #0: ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
       packageName=com.supercell.clashroyale processName=com.supercell.clashroyale
       launchedFromUid=1000 launchedFromPackage=com.android.settings launchedFromFeature=null userId=0
@@ -26,9 +73,9 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff212121
         backgroundColor=ff303030 statusBarColor=ff000000 navigationBarColor=808080
        backgroundColorFloating=ff424242
-      launchFailed=false launchCount=1 lastLaunchTime=-11s401ms
+      launchFailed=false launchCount=1 lastLaunchTime=-20s555ms
       mHaveState=false mIcicle=null
-      state=RESUMED delayedResume=false finishing=false
+      state=PAUSED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
       occludesParent=true noDisplay=false immersive=false launchMode=2
       frozenBeforeDestroy=false forceNewConfig=false
@@ -42,7 +89,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
       startingData=null firstWindowDrawn=true mIsExiting=false
-      nowVisible=true lastVisibleTime=-10s789ms
+      nowVisible=true lastVisibleTime=-19s943ms
       resizeMode=RESIZE_MODE_RESIZEABLE
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_SUPPORTED_METADATA
@@ -76,7 +123,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
         backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
        backgroundColorFloating=fff1f0f7
-      launchFailed=false launchCount=0 lastLaunchTime=-2m56s809ms
+      launchFailed=false launchCount=0 lastLaunchTime=-3m5s962ms
       mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=6088]
       state=STOPPED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -92,7 +139,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
       mAppStopped=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-      nowVisible=false lastVisibleTime=-13s701ms
+      nowVisible=false lastVisibleTime=-22s854ms
       resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
@@ -128,7 +175,7 @@ Display #0 (activities from top to bottom):
         taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
           backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
          backgroundColorFloating=fff1f0f7
-        launchFailed=false launchCount=0 lastLaunchTime=-8m50s488ms
+        launchFailed=false launchCount=0 lastLaunchTime=-8m59s641ms
         mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=5016]
         state=STOPPED delayedResume=false finishing=false
         keysPaused=false inHistory=true idle=true
@@ -144,7 +191,7 @@ Display #0 (activities from top to bottom):
         mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
         mAppStopped=true
         mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-        nowVisible=false lastVisibleTime=-3m35s175ms
+        nowVisible=false lastVisibleTime=-3m44s328ms
         connections={ConnectionRecord{14cb8ed u0 com.android.launcher3/com.android.quickstep.TouchInteractionService:@6c32b04 flags=0x0}}
         resizeMode=RESIZE_MODE_RESIZEABLE
         mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
@@ -167,9 +214,9 @@ Display #0 (activities from top to bottom):
       isSleeping=false
 
   Resumed activities in task display areas (from top to bottom):
-    Resumed: ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
+    Resumed: ActivityRecord{7355739 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t10}
 
-  ResumedActivity: ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
+  ResumedActivity: ActivityRecord{7355739 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t10}
 
 ActivityTaskSupervisor state:
   topDisplayFocusedRootTask=Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale}
@@ -180,9 +227,9 @@ ActivityTaskSupervisor state:
   mLastOrientationSource=WindowedMagnification:0:31@117040931
   deepestLastOrientationSource=ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
   overrideConfig={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.35 fontWeightAdjustment=0}
-  mLayoutSeq=141
-  mCurrentFocus=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
-  mFocusedApp=ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
+  mLayoutSeq=144
+  mCurrentFocus=Window{3a912d7 u0 com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}
+  mFocusedApp=ActivityRecord{7355739 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t10}
 
   mHoldScreenWindow=null
   mObscuringWindow=null
@@ -241,8 +288,9 @@ ActivityTaskSupervisor state:
       mPreferredTopFocusableRootTask=Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale}
       mLastFocusedRootTask=Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale}
       Application tokens in top down Z order:
-      * Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      * Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
         bounds=[0,0][720,1280]
+        * ActivityRecord{7355739 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t10}
         * ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}
       * Task{a1b7ab9 #9 type=standard A=1000:com.android.settings U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
         bounds=[0,0][720,1280]
@@ -288,9 +336,9 @@ ActivityTaskSupervisor state:
     mNavigationBarPosition=4
     mTopGestureHost=Window{df1ce2a u0 StatusBar}
     mBottomGestureHost=Window{18fb00e u0 NavigationBar0}
-    mFocusedWindow=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+    mFocusedWindow=Window{3a912d7 u0 com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}
     mTopFullscreenOpaqueWindowState=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
-    mSystemBarColorApps={ActivityRecord{cf86a9b u0 com.supercell.clashroyale/com.supercell.titan.GameApp t10}}
+    mSystemBarColorApps={ActivityRecord{7355739 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t10}}
     mLastStatusBarAppearanceRegions=
       AppearanceRegion{ bounds=[0,0][720,1280]}
     mLastLetterboxDetails=
@@ -354,19 +402,20 @@ ActivityTaskSupervisor state:
         InsetsSource id=3 type=ime frame=[0,0][0,0] visible=false flags=
     Control map:
       Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}:
-        InsetsSourceControl: {3 mType=ime mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0}}
         InsetsSourceControl: {c6c70001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96}}
         InsetsSourceControl: {f6b50000 mType=statusBars initiallyVisible mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0}}
+      Window{3a912d7 u0 com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}:
+        InsetsSourceControl: {3 mType=ime mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0}}
     InsetsSourceProviders:
       ImeInsetsSourceProvider
         mSource=InsetsSource id=3 type=ime frame=[0,0][0,0] visible=false flags=
         mSourceFrame=Rect(40, 1280 - 680, 1280)
-        mControl=InsetsSourceControl mId=3 mType=ime mLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x2a3c194 mInitiallyVisible=false mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl mId=3 mType=ime mLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x86799f4 mInitiallyVisible=false mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} mSkipAnimationOnce=false
         mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} stale
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{fb06f34 u0 InputMethod}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x2a3c194
-        mControlTarget=Window{e02656a u0 com.supercell.clashroyale/com.supercell.titan.GameApp}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x86799f4
+        mControlTarget=Window{3a912d7 u0 com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}
         mImeShowing=false
       InsetsSourceProvider
         mSource=InsetsSource id=f6b50006 type=tappableElement frame=[0,0][720,48] visible=true flags=
@@ -447,5 +496,5 @@ ActivityTaskSupervisor state:
         (fullscreen) Task{a1b7ab9 #9 type=standard A=1000:com.android.settings}
         (fullscreen) Task{522ce38 #10 type=standard A=10087:com.supercell.clashroyale}
 
-  VisibleActivityProcess:[ ProcessRecord{ea05b76 18093:com.supercell.clashroyale/u0a87}]
+  VisibleActivityProcess:[ ProcessRecord{923044b 671:com.android.permissioncontroller/u0a76} ProcessRecord{ea05b76 18093:com.supercell.clashroyale/u0a87}]
   NumNonAppVisibleWindowUidMap:[ 10065:2]
