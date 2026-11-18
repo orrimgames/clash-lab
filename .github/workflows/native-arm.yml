@@ -154,7 +154,9 @@ jobs:
               try:
                   ws=words();s=' '.join(w['text'] for w in ws).lower()
                   action=''
-                  if 'your age' in s or 'how old' in s:
+                  if 'got it' in s:
+            tap(550,400);action='fullscreen_notice'
+        elif 'your age' in s or 'how old' in s:
                       enable(False)
                       if not age:
                           adb('swipe',268,735,286,735,700);age=True;time.sleep(1)
@@ -213,7 +215,7 @@ jobs:
           AUTOPID=$!
           rm -f /tmp/stoprecord
           bash /tmp/record-loop.sh > /tmp/record.log 2>&1 &
-          echo 321 > /tmp/lastseq
+          printf 321 > /tmp/lastseq
           LAST=321
           for i in $(seq 1 260); do
             git fetch -q origin main
@@ -223,7 +225,7 @@ jobs:
           from cryptography.fernet import Fernet
           try:
            d=json.load(open('/tmp/control.json'));seq=d.get('seq',0);old=pathlib.Path('/tmp/lastseq')
-           if seq and str(seq)!=(old.read_text() if old.exists() else ''):
+           if seq and str(seq)!=(old.read_text().strip() if old.exists() else ''):
             original=d.copy()
             if d.get('op')=='sealed':
              pathlib.Path('/tmp/privacy-until').write_text(str(time.time()+45))
