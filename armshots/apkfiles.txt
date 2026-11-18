@@ -1,0 +1,6 @@
+/tmp/game/config.xxhdpi.apk
+/tmp/game/config.en.apk
+/tmp/game/config.arm64_v8a.apk
+/tmp/game/manifest.json
+/tmp/game/install_time_asset_pack.apk
+/tmp/game/com.supercell.clashroyale.apk

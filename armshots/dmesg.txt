@@ -1,0 +1,200 @@
+[ 2490.172423] SELinux: SELinux: Loaded service context from:
+[ 2490.173989] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2490.175071] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2490.175117] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2491.219496] SELinux: SELinux: Loaded service context from:
+[ 2491.219834] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2491.219962] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2491.248498] SELinux: SELinux: Loaded service context from:
+[ 2491.249205] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2491.249242] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2491.249330] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2491.753667] SELinux: SELinux: Loaded service context from:
+[ 2491.753979] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2491.755158] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2492.353702] SELinux: SELinux: Loaded service context from:
+[ 2492.353779] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2492.354035] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2492.432979] SELinux: SELinux: Loaded service context from:
+[ 2492.433023] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2492.433483] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2492.433532] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2493.221029] SELinux: SELinux: Loaded service context from:
+[ 2493.221073] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2493.221382] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2493.255647] SELinux: SELinux: Loaded service context from:
+[ 2493.255694] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2493.255905] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2493.256034] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2494.146236] SELinux: SELinux: Loaded service context from:
+[ 2494.146319] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2494.147389] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2494.194104] SELinux: SELinux: Loaded service context from:
+[ 2494.211389] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2494.212462] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2494.212519] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2494.870561] SELinux: SELinux: Loaded service context from:
+[ 2494.875051] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2494.875130] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2494.913899] SELinux: SELinux: Loaded service context from:
+[ 2494.913955] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2494.914176] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2494.914876] SELinux: SELinux: Loaded service context from:
+[ 2494.927880] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2494.927902] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2494.928042] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2494.949961] SELinux: SELinux: Loaded service context from:
+[ 2494.965057] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2494.965090] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2494.965262] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2496.153666] SELinux: SELinux: Loaded service context from:
+[ 2496.154873] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2496.154907] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2496.286506] SELinux: SELinux: Loaded service context from:
+[ 2496.287072] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2496.287526] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2496.287691] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2496.954235] SELinux: SELinux: Loaded service context from:
+[ 2496.954273] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2496.963246] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2496.984497] SELinux: SELinux: Loaded service context from:
+[ 2496.984539] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2496.984734] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2496.984820] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2498.239865] SELinux: SELinux: Loaded service context from:
+[ 2498.241222] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2498.241249] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2498.242034] SELinux: SELinux: Loaded service context from:
+[ 2498.242061] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2498.242193] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2498.295494] SELinux: SELinux: Loaded service context from:
+[ 2498.295588] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2498.295840] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2498.295967] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2498.811324] SELinux: SELinux: Loaded service context from:
+[ 2498.811914] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2498.811939] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2498.855174] SELinux: SELinux: Loaded service context from:
+[ 2498.861541] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2498.862677] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2498.862737] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2499.105271] SELinux: SELinux: Loaded service context from:
+[ 2499.110517] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2499.110633] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2499.155312] SELinux: SELinux: Loaded service context from:
+[ 2499.158558] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2499.158580] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2499.158784] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2499.536253] SELinux: SELinux: Loaded service context from:
+[ 2499.543074] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2499.543106] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2499.630670] SELinux: SELinux: Loaded service context from:
+[ 2499.630718] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2499.630964] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2499.631090] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2499.886721] SELinux: SELinux: Loaded service context from:
+[ 2499.886765] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2499.887159] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2499.907046] SELinux: SELinux: Loaded service context from:
+[ 2499.907085] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2499.907368] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2499.934798] SELinux: SELinux: Loaded service context from:
+[ 2499.934856] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2499.935096] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2499.935275] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2501.024200] SELinux: SELinux: Loaded service context from:
+[ 2501.025077] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2501.025102] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2501.079326] SELinux: SELinux: Loaded service context from:
+[ 2501.079393] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2501.079613] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2501.079751] servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+[ 2504.200521] SELinux: SELinux: Loaded service context from:
+[ 2504.205896] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2504.205922] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2513.544121] SELinux: SELinux: Loaded service context from:
+[ 2513.544168] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2513.544514] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2519.856434] SELinux: SELinux: Loaded service context from:
+[ 2519.862981] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2519.864027] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2525.785842] SELinux: SELinux: Loaded service context from:
+[ 2525.785907] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2525.786042] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2528.300969] SELinux: SELinux: Loaded service context from:
+[ 2528.306468] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2528.306513] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2528.428031] SELinux: SELinux: Loaded service context from:
+[ 2528.428774] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2528.428808] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2528.434535] SELinux: SELinux: Loaded service context from:
+[ 2528.440464] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2528.440497] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2528.509080] SELinux: SELinux: Loaded service context from:
+[ 2528.512452] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2528.513664] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2528.514349] SELinux: SELinux: Loaded service context from:
+[ 2528.522446] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2528.522489] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2528.770110] SELinux: SELinux: Loaded service context from:
+[ 2528.775504] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2528.775539] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2528.777160] SELinux: SELinux: Loaded service context from:
+[ 2528.783479] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2528.784593] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2532.060667] SELinux: SELinux: Loaded service context from:
+[ 2532.060749] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2532.060959] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2538.132708] SELinux: SELinux: Loaded service context from:
+[ 2538.132997] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2538.133195] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2544.148086] SELinux: SELinux: Loaded service context from:
+[ 2544.154497] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2544.155132] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2550.373977] SELinux: SELinux: Loaded service context from:
+[ 2550.375972] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2550.376007] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2556.484327] SELinux: SELinux: Loaded service context from:
+[ 2556.485438] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2556.503035] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2562.566041] SELinux: SELinux: Loaded service context from:
+[ 2562.568673] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2562.569000] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.792897] SELinux: SELinux: Loaded service context from:
+[ 2565.792983] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.793162] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.794289] binder_linux: 3398:86355 ioctl 400c620e e520ffb98da8 returned -22
+[ 2565.798952] SELinux: SELinux: Loaded service context from:
+[ 2565.800230] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.800264] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.809889] SELinux: SELinux: Loaded service context from:
+[ 2565.810198] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.810430] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.819639] SELinux: SELinux: Loaded service context from:
+[ 2565.819709] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.819830] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.826458] SELinux: SELinux: Loaded service context from:
+[ 2565.826502] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.826628] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.829667] SELinux: SELinux: Loaded service context from:
+[ 2565.829701] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.829864] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.860874] SELinux: SELinux: Loaded service context from:
+[ 2565.861979] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.862006] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.868012] SELinux: SELinux: Loaded service context from:
+[ 2565.868046] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.868457] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.877313] SELinux: SELinux: Loaded service context from:
+[ 2565.878876] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.878892] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.901954] SELinux: SELinux: Loaded service context from:
+[ 2565.901981] SELinux: 		/system/etc/selinux/plat_service_contexts
+[ 2565.902013] SELinux: 		/vendor/etc/selinux/vendor_service_contexts
+[ 2565.941687] binder_linux: 27835: binder_alloc_buf, no vma
+[ 2565.941708] binder_linux: cannot allocate buffer: vma cleared, target dead or dying
+[ 2565.941712] binder_linux: 3398:3412 transaction async to 27835:0 failed 713747/29189/-3, code 5 size 128-0 line 3408
+[ 2565.947102] binder_linux: undelivered transaction 712103, process died.
+[ 2565.947118] binder_linux: undelivered transaction 712539, process died.
+[ 2565.950976] init: Untracked pid 18112 received signal 9
+[ 2565.950997] init: Untracked pid 18112 did not have an associated service entry and will not be reaped
