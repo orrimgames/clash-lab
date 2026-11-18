@@ -1,1 +1,1 @@
-{"seq":308,"op":"tap","args":[473,752]}
+{"seq":309,"op":"batch","args":[{"op":"tap","args":[220,1130]},{"op":"tap","args":[170,790]},{"op":"wait","seconds":1},{"op":"tap","args":[360,1130]},{"op":"tap","args":[170,830]}]}
