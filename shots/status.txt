@@ -6,3 +6,4 @@
 14:25:53 downloading-arm64
 14:26:32 install-rc=0
 14:26:47 launched
+14:27:48 diagnostics-done

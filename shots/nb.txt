@@ -1,0 +1,80 @@
+11-18 14:27:16.547   372   372 D Zygote  : Forked child process 5697
+11-18 14:27:16.585   563   563 I Telecom : CarModeTracker: Package com.google.android.gms is not tracked.: SSH.oR@AOk
+11-18 14:27:16.585   563   563 I Telecom : InCallController: updateCarModeForConnections: car mode apps: : SSH.oR@AOk
+11-18 14:27:16.585   563   563 I Telecom : InCallController: update carmode current:UserHandle{0} parent:null: SSH.oR@AOk
+11-18 14:27:16.615  5697  5697 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-18 14:27:16.627  5697  5697 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-18 14:27:16.627  5697  5697 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-18 14:27:16.718   951   968 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/base.apk' with 1 weak references
+11-18 14:27:16.719   951   968 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.arm64_v8a.apk' with 1 weak references
+11-18 14:27:16.720   951   968 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.en.apk' with 1 weak references
+11-18 14:27:16.720   951   968 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.xxhdpi.apk' with 1 weak references
+11-18 14:27:16.720   951   968 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_install_time_asset_pack.apk' with 1 weak references
+11-18 14:27:17.157  5697  5748 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360137933 windowMillis: -1 intervalMillis: 0]
+11-18 14:27:17.211   372   372 I Zygote  : Process 1531 exited due to signal 9 (Killed)
+11-18 14:27:17.225  1033  1033 I Zygote  : Process 5222 exited due to signal 9 (Killed)
+11-18 14:27:17.251  1113  1113 E MediaControllerCompat: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+11-18 14:27:17.308   372   372 I Zygote  : Process 1399 exited due to signal 9 (Killed)
+11-18 14:27:17.338   563   563 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:864)
+11-18 14:27:17.338   563   563 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:864)
+11-18 14:27:17.345   372   372 I Zygote  : Process 4788 exited due to signal 9 (Killed)
+11-18 14:27:17.364   372   372 I Zygote  : Process 1376 exited due to signal 9 (Killed)
+11-18 14:27:17.429   372   372 D Zygote  : Forked child process 5811
+11-18 14:27:17.445  5697  5746 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360138225 windowMillis: -1 intervalMillis: 0]
+11-18 14:27:17.454  5811  5811 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-18 14:27:17.454  5811  5811 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-18 14:27:17.454  5811  5811 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-18 14:27:17.691  5697  5697 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360138471 windowMillis: -1 intervalMillis: 0]
+11-18 14:27:17.927   372   372 D Zygote  : Forked child process 5917
+11-18 14:27:17.969  5917  5917 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-18 14:27:17.971  5917  5917 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-18 14:27:17.971  5917  5917 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-18 14:27:18.173  5697  5737 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 151952]
+11-18 14:27:18.186  5917  5948 D nativeloader: Configuring clns-11 for other apk . target_sdk_version=37, uses_libraries=ALL, library_path=/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/x86_64:/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-18 14:27:18.305  5697  5959 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 739084]
+11-18 14:27:18.328   372   372 D Zygote  : Forked child process 5982
+11-18 14:27:18.423  5982  5982 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-18 14:27:18.423  5982  5982 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-18 14:27:18.428  5697  5996 I NearbyDiscovery: (REDACTED) ApFastPairScanner: isScreenOn=%s, isLocationEnabled=%s, disableLocationRequirement=%s, isDiscoveryScanningEnabled=%s, during24GhzWifiWarmingUpPeriod=%s
+11-18 14:27:18.429  5697  5996 I NearbyDiscovery: (REDACTED) ApFastPairScanner: isScreenOn=%s, isLocationEnabled=%s, disableLocationRequirement=%s, isDiscoveryScanningEnabled=%s, during24GhzWifiWarmingUpPeriod=%s
+11-18 14:27:18.444  5697  5996 I NearbyDiscovery: (REDACTED) ApFastPairScanner: isScreenOn=%s, isLocationEnabled=%s, disableLocationRequirement=%s, isDiscoveryScanningEnabled=%s, during24GhzWifiWarmingUpPeriod=%s
+11-18 14:27:18.446  5982  5982 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-18 14:27:18.446  5982  5982 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-18 14:27:18.487  5697  5775 I Vision  : Supported ABIS: [x86_64, arm64-v8a]
+11-18 14:27:18.489  1113  1243 I bluetooth: system/gd/hci/le_address_manager.cc:248 unregister_client: Cancelled address rotation alarm
+11-18 14:27:18.539  5697  5740 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 739317]
+11-18 14:27:18.556  5697  5740 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 739336]
+11-18 14:27:18.564  5697  5740 D nativeloader: Configuring clns-11 for other apk . target_sdk_version=37, uses_libraries=ALL, library_path=/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/x86_64:/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-18 14:27:18.992  5697  5704 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/base.apk' with 1 weak references
+11-18 14:27:18.992  5697  5704 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.arm64_v8a.apk' with 1 weak references
+11-18 14:27:18.992  5697  5704 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.en.apk' with 1 weak references
+11-18 14:27:18.992  5697  5704 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.xxhdpi.apk' with 1 weak references
+11-18 14:27:18.992  5697  5704 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_install_time_asset_pack.apk' with 1 weak references
+11-18 14:27:19.128  5982  6047 D nativeloader: Configuring clns-9 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/x86_64:/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-18 14:27:20.356  5697  5763 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 154136]
+11-18 14:27:20.409  5697  5959 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360141188 windowMillis: -1 intervalMillis: 0]
+11-18 14:27:20.491   372   372 D Zygote  : Forked child process 6125
+11-18 14:27:20.509  6125  6125 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-18 14:27:20.509  6125  6125 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-18 14:27:20.509  6125  6125 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-18 14:27:20.515  6125  6125 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-18 14:27:20.516  6125  6125 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-18 14:27:21.582   372   372 D Zygote  : Forked child process 6153
+11-18 14:27:21.628  6153  6153 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-18 14:27:21.628  6153  6153 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-18 14:27:21.628  6153  6153 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-18 14:27:21.649  6153  6153 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-18 14:27:21.650  6153  6153 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-18 14:27:23.678  5596  6193 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-18 14:27:23.730  5596  6193 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-18 14:27:23.730  5596  6193 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-18 14:27:24.220  5596  5611 D nativeloader: Configuring clns-13 for other apk . target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/x86_64:/data/app/~~C5IKZ0pjZ5H8JsbC6F3X9Q==/com.google.android.gms-XwUZ6xxdasV8gmr7SfdtHg==/split_CronetDynamite_installtime.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-18 14:27:25.321   563   672 I RescueParty: Starting to observe: [android], updated namespace: alarm_manager
+11-18 14:27:40.234  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk' with 1 weak references
+11-18 14:27:40.234  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/base.apk' with 1 weak references
+11-18 14:27:40.234  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.arm64_v8a.apk' with 1 weak references
+11-18 14:27:40.234  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.en.apk' with 1 weak references
+11-18 14:27:40.234  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_config.xxhdpi.apk' with 1 weak references
+11-18 14:27:40.235  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/split_install_time_asset_pack.apk' with 1 weak references
+11-18 14:27:40.235  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode2Button/NavigationBarMode2ButtonOverlay.apk' with 1 weak references
+11-18 14:27:40.242  6125  6131 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk' with 1 weak references
