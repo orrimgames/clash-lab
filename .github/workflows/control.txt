@@ -1,1 +1,1 @@
-{"seq":244,"op":"batch","args":[{"op":"tap","args":[490,1130]},{"op":"tap","args":[250,390]},{"op":"tap","args":[220,1130]},{"op":"tap","args":[220,390]},{"op":"wait","seconds":5},{"op":"tap","args":[630,1130]},{"op":"tap","args":[360,160]},{"op":"wait","seconds":5}]}
+{"seq":245,"op":"batch","args":[{"op":"tap","args":[360,1160]},{"op":"wait","seconds":6},{"op":"tap","args":[655,135]},{"op":"wait","seconds":3}]}
