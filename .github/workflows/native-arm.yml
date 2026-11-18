@@ -25,7 +25,7 @@ jobs:
           mkdir -p armshots
           uname -a | tee armshots/host.txt
           sudo apt-get update
-          sudo apt-get install -y adb linux-modules-extra-$(uname -r) python3-requests python3-cryptography unzip g++ || sudo apt-get install -y adb python3-requests python3-cryptography unzip g++
+          sudo apt-get install -y adb linux-modules-extra-$(uname -r) python3-requests python3-cryptography python3-pil tesseract-ocr unzip g++ || sudo apt-get install -y adb python3-requests python3-cryptography python3-pil tesseract-ocr unzip g++
           sudo modprobe binder_linux devices=binder,hwbinder,vndbinder || true
           sudo modprobe ashmem_linux || true
           sudo mkdir -p /dev/binderfs
@@ -55,24 +55,7 @@ jobs:
           pathlib.Path('armshots/apkfiles.txt').write_text('\n'.join(str(p) for p in pathlib.Path('/tmp/game').iterdir()))
           PY
           adb install-multiple /tmp/game/*.apk | tee armshots/install.txt
-          python3 - <<'RESTORE'
-          import os,requests,zipfile,io,subprocess,pathlib
-          from cryptography.fernet import Fernet
-          key=os.environ.get('CLASH_CONTROL_KEY','')
-          assert key,'missing private control key'
-          r=requests.get('https://api.github.com/repos/'+os.environ['GH_REPO']+'/actions/artifacts?name=clash-save&per_page=10',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'},timeout=30)
-          r.raise_for_status()
-          artifacts=[a for a in r.json().get('artifacts',[]) if not a['expired']]
-          if artifacts:
-           u=artifacts[0]['archive_download_url']
-           z=requests.get(u,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN']},timeout=90);z.raise_for_status()
-           enc=zipfile.ZipFile(io.BytesIO(z.content)).read('account.fernet')
-           raw=Fernet(key.encode()).decrypt(enc)
-           subprocess.run(['sudo','docker','exec','-i','android','tar','-xzf','-','-C','/data/user/0'],input=raw,check=True)
-           subprocess.run(['adb','shell','restorecon','-RF','/data/user/0/com.supercell.clashroyale'],check=False)
-           pathlib.Path('armshots/restore-status.txt').write_text('Authenticated encrypted app-data restored; verify in game.')
-          else:pathlib.Path('armshots/restore-status.txt').write_text('No prior encrypted backup; fresh account.')
-          RESTORE
+          echo 'Fresh account; restoration deferred.' > armshots/restore-status.txt
           set +e
           adb logcat -c
           adb shell cmd package resolve-activity --brief com.supercell.clashroyale > armshots/resolve.txt 2>&1
@@ -140,7 +123,98 @@ jobs:
             adb shell screenrecord --time-limit 60 --bit-rate 1500000 /sdcard/game-$j.mp4
           done
           REC
-          LAST=0
+          cat > /tmp/autotutorial.py <<'AUTOTUTORIAL'
+          import subprocess,time,pathlib,csv,io,re
+          from PIL import Image
+          P=pathlib.Path
+          
+          def adb(*args):
+              return subprocess.run(['adb','shell','input',*map(str,args)],capture_output=True,timeout=15)
+          def tap(x,y): adb('tap',x,y)
+          def enable(v=True):
+              p=P('/tmp/bot-on')
+              if v:p.touch()
+              else:p.unlink(missing_ok=True)
+          def words():
+              r=subprocess.run(['adb','exec-out','screencap','-p'],capture_output=True,timeout=15)
+              P('/tmp/ocr.png').write_bytes(r.stdout)
+              r=subprocess.run(['tesseract','/tmp/ocr.png','stdout','--psm','11','tsv'],capture_output=True,text=True,timeout=20)
+              return [x for x in csv.DictReader(io.StringIO(r.stdout),delimiter='\t') if x.get('text','').strip()]
+          def clickword(ws,needle,miny=0):
+              for w in ws:
+                  if needle in w['text'].lower() and int(w['top'])>=miny:
+                      tap(int(w['left'])+int(w['width'])//2,int(w['top'])+int(w['height'])//2)
+                      return True
+              return False
+          
+          P('/tmp/training').touch()
+          start=time.time();named=False;age=False;privacy=False;in_ladder=False
+          lastaction='';fikova=False;lastfire=0
+          for tick in range(600):
+              try:
+                  ws=words();s=' '.join(w['text'] for w in ws).lower()
+                  action=''
+                  if 'your age' in s or 'how old' in s:
+                      enable(False)
+                      if not age:
+                          adb('swipe',268,735,286,735,700);age=True;time.sleep(1)
+                      else:tap(360,905)
+                      action='age23'
+                  elif ('terms' in s and ('agree' in s or 'service' in s)):
+                      enable(False);tap(580,870);action='terms'
+                  elif ('sell' in s and ('information' in s or 'personal' in s)):
+                      enable(False)
+                      if not privacy:tap(100,744);privacy=True;time.sleep(.5)
+                      tap(360,846);action='privacy'
+                  elif 'player name' in s or 'choose your' in s:
+                      enable(False)
+                      if not named:
+                          tap(300,401);adb('text','INSTINCT');adb('keyevent',4);named=True;time.sleep(1)
+                      clickword(ws,'ok',450);action='name'
+                  elif ('trainer' in s or 'royal trainers' in s) and not ('winner' in s or 'reward' in s):
+                      P('/tmp/training').touch();enable()
+                      im=Image.open('/tmp/ocr.png').convert('RGB')
+                      r,g,b=im.getpixel((500,680))
+                      if abs(r-g)<15 and abs(g-b)<15 and r>140:
+                          tap(473,752);action='tutorial_dialog'
+                      elif 'fikova' in s:
+                          if not fikova:
+                              tap(220,1130);tap(170,790);time.sleep(1);tap(360,1130);tap(170,830);fikova=True
+                          elif time.time()-lastfire>8:
+                              adb('swipe',490,1130,277,330,500);lastfire=time.time()
+                          action='fikova_sequence'
+                  elif 'winner' in s or ('reward' in s and 'clan' in s):
+                      enable(False);tap(360,1160);action='result'
+                  elif 'upgrade' in s and ('knight' in s or 'level' in s) and not ('rare card' in s or 'common card' in s):
+                      enable(False)
+                      if not clickword(ws,'upgrade',650):clickword(ws,'upgrade')
+                      action='earned_currency_upgrade'
+                  elif ('cards' in s and ('collection' in s or 'deck' in s)):
+                      enable(False)
+                      if not clickword(ws,'knight'):tap(530,130)
+                      action='collection'
+                  elif 'battle' in s and ('event' in s or 'stadium' in s or 'arena' in s):
+                      enable(False)
+                      if 'stadium' in s or 'arena' in s:
+                          P('/tmp/training').unlink(missing_ok=True);in_ladder=True
+                      clickword(ws,'battle',700);enable();action='start_battle'
+                  elif 'rare card' in s or 'common card' in s or 'gold' in s and 'found' in s or 'chest' in s:
+                      enable(False);tap(360,950);action='free_reward'
+                  elif 'upgrade' in s and 'card' in s:
+                      enable(False);tap(165,1213);action='open_collection'
+                  if action:
+                      P('armshots/auto-status.txt').write_text(str(round(time.time()-start))+' '+action+' ladder='+str(in_ladder))
+                  time.sleep(2)
+              except Exception as e:
+                  P('armshots/auto-error.txt').write_text(type(e).__name__)
+                  time.sleep(5)
+          AUTOTUTORIAL
+          python3 /tmp/autotutorial.py > /tmp/auto.log 2>&1 &
+          AUTOPID=$!
+          rm -f /tmp/stoprecord
+          bash /tmp/record-loop.sh > /tmp/record.log 2>&1 &
+          echo 321 > /tmp/lastseq
+          LAST=321
           for i in $(seq 1 260); do
             git fetch -q origin main
             git show FETCH_HEAD:.github/workflows/control.txt > /tmp/control.json 2>/dev/null || echo '{}' > /tmp/control.json
@@ -167,6 +241,7 @@ jobs:
             elif op=='bot-off':
              pathlib.Path('/tmp/bot-on').unlink(missing_ok=True)
             elif op=='record':
+             pathlib.Path('/tmp/stoprecord').unlink(missing_ok=True)
              subprocess.Popen(['bash','/tmp/record-loop.sh'],stdout=open('/tmp/record.log','w'),stderr=subprocess.STDOUT)
             elif op=='batch':
              for a in args[:30]:
@@ -193,7 +268,7 @@ jobs:
             test -f /tmp/finish && break
             sleep 5
           done
-          kill "$BOTPID" || true
+          kill "$AUTOPID" "$BOTPID" || true
           touch /tmp/stoprecord
           sleep 62
           adb shell ls /sdcard/game-*.mp4 | tr -d '\r' | while read f; do adb pull "$f" armshots/ || true; done
