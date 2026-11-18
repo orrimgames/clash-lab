@@ -1,1 +1,1 @@
-{"seq":268,"op":"finish","args":[]}
+{"seq":269,"op":"bot","args":["training"]}
