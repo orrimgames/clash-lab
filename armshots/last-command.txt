@@ -1,1 +1,1 @@
-{"seq": 342, "op": "batch", "args": [{"op": "tap", "args": [360, 750]}, {"op": "wait", "seconds": 2}, {"op": "tap", "args": [360, 750]}, {"op": "wait", "seconds": 2}, {"op": "tap", "args": [360, 750]}, {"op": "wait", "seconds": 2}, {"op": "tap", "args": [360, 950]}, {"op": "wait", "seconds": 2}, {"op": "tap", "args": [360, 950]}, {"op": "wait", "seconds": 2}, {"op": "tap", "args": [360, 950]}, {"op": "wait", "seconds": 2}, {"op": "tap", "args": [360, 950]}, {"op": "wait", "seconds": 2}, {"op": "tap", "args": [360, 950]}]}
+{"seq": 343, "op": "record", "args": []}
