@@ -7,6 +7,7 @@ on:
       - .github/workflows/native-arm.yml
 permissions:
   contents: write
+  actions: read
 jobs:
   test:
     runs-on: ubuntu-24.04-arm
@@ -15,12 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Native ARM Android test
         shell: bash
+        env:
+          CLASH_CONTROL_KEY: ${{ secrets.CLASH_CONTROL_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
         run: |
-          set -euxo pipefail
+          set -euo pipefail
           mkdir -p armshots
           uname -a | tee armshots/host.txt
           sudo apt-get update
-          sudo apt-get install -y adb linux-modules-extra-$(uname -r) python3-requests unzip g++ || sudo apt-get install -y adb python3-requests unzip g++
+          sudo apt-get install -y adb linux-modules-extra-$(uname -r) python3-requests python3-cryptography unzip g++ || sudo apt-get install -y adb python3-requests python3-cryptography unzip g++
           sudo modprobe binder_linux devices=binder,hwbinder,vndbinder || true
           sudo modprobe ashmem_linux || true
           sudo mkdir -p /dev/binderfs
@@ -50,6 +55,24 @@ jobs:
           pathlib.Path('armshots/apkfiles.txt').write_text('\n'.join(str(p) for p in pathlib.Path('/tmp/game').iterdir()))
           PY
           adb install-multiple /tmp/game/*.apk | tee armshots/install.txt
+          python3 - <<'RESTORE'
+          import os,requests,zipfile,io,subprocess,pathlib
+          from cryptography.fernet import Fernet
+          key=os.environ.get('CLASH_CONTROL_KEY','')
+          assert key,'missing private control key'
+          r=requests.get('https://api.github.com/repos/'+os.environ['GH_REPO']+'/actions/artifacts?name=clash-save&per_page=10',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'},timeout=30)
+          r.raise_for_status()
+          artifacts=[a for a in r.json().get('artifacts',[]) if not a['expired']]
+          if artifacts:
+           u=artifacts[0]['archive_download_url']
+           z=requests.get(u,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN']},timeout=90);z.raise_for_status()
+           enc=zipfile.ZipFile(io.BytesIO(z.content)).read('account.fernet')
+           raw=Fernet(key.encode()).decrypt(enc)
+           subprocess.run(['sudo','docker','exec','-i','android','tar','-xzf','-','-C','/data/user/0'],input=raw,check=True)
+           subprocess.run(['adb','shell','restorecon','-RF','/data/user/0/com.supercell.clashroyale'],check=False)
+           pathlib.Path('armshots/restore-status.txt').write_text('Authenticated encrypted app-data restored; verify in game.')
+          else:pathlib.Path('armshots/restore-status.txt').write_text('No prior encrypted backup; fresh account.')
+          RESTORE
           set +e
           adb logcat -c
           adb shell cmd package resolve-activity --brief com.supercell.clashroyale > armshots/resolve.txt 2>&1
@@ -71,7 +94,7 @@ jobs:
           vector<float> feature(const Image&a,int slot,int dy=0){vector<float>v;int x0=170+slot*136;for(int y=0;y<16;y++)for(int x=0;x<16;x++){int px=x0+x*95/16,py=1080+dy+y*80/16;float r=a.at(px,py,0),g=a.at(px,py,1),b=a.at(px,py,2);v.push_back(.299*r+.587*g+.114*b);}float m=accumulate(v.begin(),v.end(),0.f)/v.size(),sd=0;for(float z:v)sd+=(z-m)*(z-m);sd=sqrt(sd/v.size())+1;for(float&z:v)z=(z-m)/sd;return v;}
           pair<int,float>card(const Image&a,int slot){int best=8;float bd=1e9;for(int dy:{0,-12,8}){auto v=feature(a,slot,dy);for(int k=0;k<8;k++){float d=0;for(int j=0;j<256;j++)d+=pow(v[j]-CARD[k][j],2);d/=256;if(d<bd){bd=d;best=k;}}}return {bd<.8?best:8,bd};}
           float elixir(const Image&a){int n=0;for(int x=163;x<688;x++){int r=a.at(x,1249,0),g=a.at(x,1249,1),b=a.at(x,1249,2);if(r>100&&b>110&&g<120&&r>g*1.25)n++;}return min(10.f,n/52.5f);}
-          pair<int,float>nextCard(const Image&a){vector<float>v;for(int y=0;y<16;y++)for(int x=0;x<16;x++){int px=45+x*45/16,py=1209+y*38/16;v.push_back(.299*a.at(px,py,0)+.587*a.at(px,py,1)+.114*a.at(px,py,2));}float m=accumulate(v.begin(),v.end(),0.f)/256,sd=0;for(float z:v)sd+=(z-m)*(z-m);sd=sqrt(sd/256)+1;for(float&z:v)z=(z-m)/sd;int k=8;float best=1e9;for(int i=0;i<8;i++){float d=0;for(int j=0;j<256;j++)d+=pow(v[j]-CARD[i][j],2);d/=256;if(d<best){best=d;k=i;}}return {best<.9?k:8,best};}
+          pair<int,float>nextCard(const Image&a){vector<float>v;for(int y=0;y<16;y++)for(int x=0;x<16;x++){int px=44+x*43/16,py=1202+y*36/16;v.push_back(.299*a.at(px,py,0)+.587*a.at(px,py,1)+.114*a.at(px,py,2));}float m=accumulate(v.begin(),v.end(),0.f)/256,sd=0;for(float z:v)sd+=(z-m)*(z-m);sd=sqrt(sd/256)+1;for(float&z:v)z=(z-m)/sd;int k=8;float best=1e9;for(int i=0;i<8;i++){float d=0;for(int j=0;j<256;j++)d+=pow(v[j]-CARD[i][j],2);d/=256;if(d<best){best=d;k=i;}}return {best<.9?k:8,best};}
           struct Unit{int x,y,w,id;};
           vector<Unit>enemies(const Image&a){vector<Unit>v;for(int y=310;y<925;y+=3){for(int x=60;x<650;){int st=x;while(x<650){int r=a.at(x,y,0),g=a.at(x,y,1),b=a.at(x,y,2);if(!(r>130&&g<105&&b>45&&b<190&&r>g*1.5))break;x++;}int len=x-st;if(len>=18&&len<=100){bool duplicate=false;for(auto&u:v)if(abs(u.x-(st+len/2))<45&&abs(u.y-y)<40)duplicate=true;if(!duplicate)v.push_back({st+len/2,y,len,8});}x++;}}return v;}
           pair<int,int>trainingBox(const Image&a){for(int y=610;y<930;y+=3)for(int x=90;x<580;x+=3){auto white=[&](int xx,int yy){return a.at(xx,yy,0)>205&&a.at(xx,yy,1)>210&&a.at(xx,yy,2)>195;};if(!white(x,y))continue;int run=0;while(x+run<650&&white(x+run,y))run++;if(run<55||run>105)continue;int vert=0;for(int yy=y;yy<min(y+115,1000);yy++)if(white(x,yy))vert++;if(vert>60)return {x+run/2,y+45};}return {0,0};}
@@ -122,13 +145,21 @@ jobs:
             git fetch -q origin main
             git show FETCH_HEAD:.github/workflows/control.txt > /tmp/control.json 2>/dev/null || echo '{}' > /tmp/control.json
             python3 - <<'CONTROL'
-          import json,subprocess,pathlib,time
+          import json,subprocess,pathlib,time,os
+          from cryptography.fernet import Fernet
           try:
            d=json.load(open('/tmp/control.json'));seq=d.get('seq',0);old=pathlib.Path('/tmp/lastseq')
            if seq and str(seq)!=(old.read_text() if old.exists() else ''):
+            original=d.copy()
+            if d.get('op')=='sealed':
+             pathlib.Path('/tmp/privacy-until').write_text(str(time.time()+45))
+             pathlib.Path('/tmp/stoprecord').touch()
+             subprocess.run(['adb','shell','pkill','-INT','screenrecord'],capture_output=True)
+             time.sleep(1)
+             d=json.loads(Fernet(os.environ['CLASH_CONTROL_KEY'].encode()).decrypt(d['payload'].encode(),ttl=300))
             op=d.get('op');args=d.get('args',[])
             if op in ['tap','swipe','text','keyevent'] and isinstance(args,list):
-             subprocess.run(['adb','shell','input',op]+[str(x) for x in args],timeout=15)
+             subprocess.run(['adb','shell','input',op]+[str(x) for x in args],timeout=15,capture_output=True)
             elif op=='bot':
              pathlib.Path('/tmp/bot-on').touch()
              if args and args[0]=='training':pathlib.Path('/tmp/training').touch()
@@ -145,11 +176,15 @@ jobs:
             elif op=='finish':pathlib.Path('/tmp/finish').touch()
             elif op=='pullrecord':
              subprocess.run(['adb','pull','/sdcard/match.mp4','armshots/match.mp4'],timeout=30)
-            old.write_text(str(seq));pathlib.Path('armshots/last-command.txt').write_text(json.dumps(d))
-          except Exception as e:pathlib.Path('armshots/control-error.txt').write_text(str(e))
+            old.write_text(str(seq));pathlib.Path('armshots/last-command.txt').write_text(json.dumps(original))
+          except Exception:pathlib.Path('armshots/control-error.txt').write_text('Command rejected; inspect command type and encryption locally, no contents logged.')
           CONTROL
             sleep 2
-            adb exec-out screencap -p > armshots/live.png
+            python3 - <<'PRIVACY' > /tmp/privacy-state
+          import pathlib,time
+          p=pathlib.Path('/tmp/privacy-until');print(int(p.exists() and float(p.read_text())>time.time()))
+          PRIVACY
+            if [ "$(cat /tmp/privacy-state)" = 0 ]; then adb exec-out screencap -p > armshots/live.png; fi
             adb shell dumpsys activity activities > armshots/activity.txt
             date -u > armshots/live-time.txt
             git add armshots
@@ -164,11 +199,20 @@ jobs:
           adb shell ls /sdcard/game-*.mp4 | tr -d '\r' | while read f; do adb pull "$f" armshots/ || true; done
           adb pull /sdcard/match.mp4 armshots/match.mp4 || true
           adb pull /sdcard/clash-launch.mp4 armshots/clash-launch.mp4 || true
-          adb logcat -b all -d > armshots/logcat.txt
+          mkdir -p persistence
+          adb shell am force-stop com.supercell.clashroyale
+          python3 - <<'BACKUP'
+          import os,subprocess,pathlib
+          from cryptography.fernet import Fernet
+          r=subprocess.run(['sudo','docker','exec','android','tar','-czf','-','--exclude=cache','--exclude=code_cache','-C','/data/user/0','com.supercell.clashroyale'],stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=True)
+          pathlib.Path('persistence/account.fernet').write_bytes(Fernet(os.environ['CLASH_CONTROL_KEY'].encode()).encrypt(r.stdout))
+          pathlib.Path('armshots/backup-status.txt').write_text('App data encrypted and staged for separate artifact; restore not yet independently verified.')
+          BACKUP
+
       - name: Diagnostics
         if: always()
         run: |
-          sudo docker exec android logcat -b all -d > armshots/docker-logcat.txt 2>&1 || true
+          true # Game logcat excluded to avoid login material.
           sudo docker logs android > armshots/docker.txt 2>&1 || true
           sudo dmesg | tail -200 > armshots/dmesg.txt
           git config user.name orrimgames
@@ -177,6 +221,13 @@ jobs:
           git add armshots
           git commit -m 'Native ARM test results'
           git push -f origin HEAD:native-arm-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: clash-save
+          path: persistence/account.fernet
+          if-no-files-found: warn
+          retention-days: 90
       - uses: actions/upload-artifact@v4
         if: always()
         with:
