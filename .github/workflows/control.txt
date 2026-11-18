@@ -1,1 +1,1 @@
-{"seq":270,"op":"batch","args":[{"op":"tap","args":[550,400]},{"op":"wait","seconds":2},{"op":"tap","args":[360,815]}]}
+{"seq":271,"op":"batch","args":[{"op":"keyevent","args":[3]},{"op":"swipe","args":[360,1100,360,400,500]},{"op":"swipe","args":[630,270,630,270,1800]}]}
