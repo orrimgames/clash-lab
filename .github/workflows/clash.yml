@@ -28,6 +28,10 @@ jobs:
           /tmp/apkeep -a com.supercell.clashroyale -d apk-pure /tmp/crout
           cd /tmp/crout && unzip -o -q com.supercell.clashroyale.xapk -d x
           ls -la /tmp/crout/x
+          curl -sL -o /tmp/houdini.zip https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/9e77896350caccd228b36b2e1b4a994aa4bd48da.zip
+          mkdir -p /tmp/houdini && unzip -o -q /tmp/houdini.zip -d /tmp/houdini
+          mv /tmp/houdini/vendor_intel_proprietary_houdini-* /tmp/houdini/h
+          ls -la /tmp/houdini/h/prebuilts/lib /tmp/houdini/h/prebuilts/lib64
       - name: kvm
         run: |
           ls -l /dev/kvm || true
@@ -38,11 +42,11 @@ jobs:
         with:
           api-level: 30
           target: google_apis
-          arch: arm64-v8a
+          arch: x86_64
           force-avd-creation: true
           cores: 4
           emulator-boot-timeout: 3600
-          emulator-options: -no-snapshot-save -no-window -gpu guest -noaudio -no-boot-anim -memory 2048 -skin 480x800
+          emulator-options: -no-snapshot-save -no-window -gpu guest -noaudio -no-boot-anim -writable-system -memory 3072 -skin 720x1280
           disable-animations: true
           script: |
             mkdir -p shots
