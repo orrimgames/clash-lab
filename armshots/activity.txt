@@ -27,7 +27,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff212121
         backgroundColor=ff303030 statusBarColor=ff000000 navigationBarColor=808080
        backgroundColorFloating=ff424242
-      launchFailed=false launchCount=1 lastLaunchTime=-2m40s661ms
+      launchFailed=false launchCount=1 lastLaunchTime=-2m50s787ms
       mHaveState=false mIcicle=null
       state=RESUMED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -43,7 +43,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
       startingData=null firstWindowDrawn=true mIsExiting=false
-      nowVisible=true lastVisibleTime=-2m39s912ms
+      nowVisible=true lastVisibleTime=-2m50s38ms
       resizeMode=RESIZE_MODE_RESIZEABLE
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_SUPPORTED_METADATA
@@ -79,7 +79,7 @@ Display #0 (activities from top to bottom):
         taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
           backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
          backgroundColorFloating=fff1f0f7
-        launchFailed=false launchCount=0 lastLaunchTime=-3m8s738ms
+        launchFailed=false launchCount=0 lastLaunchTime=-3m18s863ms
         mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=5016]
         state=STOPPED delayedResume=false finishing=false
         keysPaused=false inHistory=true idle=true
@@ -95,7 +95,7 @@ Display #0 (activities from top to bottom):
         mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
         mAppStopped=true
         mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-        nowVisible=false lastVisibleTime=-3m7s972ms
+        nowVisible=false lastVisibleTime=-3m18s97ms
         connections={ConnectionRecord{14cb8ed u0 com.android.launcher3/com.android.quickstep.TouchInteractionService:@6c32b04 flags=0x0}}
         resizeMode=RESIZE_MODE_RESIZEABLE
         mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
