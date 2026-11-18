@@ -17,3 +17,4 @@ time,match,elixir,opp_elixir_lo,opp_elixir_hi,slot,card,x,y,score,reason,capture
 679.137,2,5.938,0.000,5.000,3,minions,245,650,7.200,defend_nearest,342.468,0.977
 680.895,2,5.253,0.308,5.255,2,knight,245,820,6.900,defend_nearest,741.579,0.360
 683.655,2,3.239,1.294,7.227,3,minions,245,820,7.200,defend_nearest,416.736,8.914
+693.557,2,3.239,0.450,9.491,2,archers,245,820,5.200,defend_nearest,1140.711,0.611
