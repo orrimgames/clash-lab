@@ -8,3 +8,4 @@
 14:26:47 launched
 14:27:48 diagnostics-done
 14:28:18 t=30 pid=
+14:28:48 t=60 pid=
