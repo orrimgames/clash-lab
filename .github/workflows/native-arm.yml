@@ -9,7 +9,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-24.04-arm
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - name: Native ARM Android test
@@ -67,8 +67,14 @@ jobs:
           git config user.email bot@users.noreply.github.com
           git checkout --orphan live-play
           git rm -rf --cached .
+          cat > /tmp/record-loop.sh <<'REC'
+          for j in $(seq -w 1 30); do
+            test -f /tmp/stoprecord && break
+            adb shell screenrecord --time-limit 60 --bit-rate 1500000 /sdcard/game-$j.mp4
+          done
+          REC
           LAST=0
-          for i in $(seq 1 100); do
+          for i in $(seq 1 230); do
             git fetch -q origin main
             git show FETCH_HEAD:.github/workflows/control.txt > /tmp/control.json 2>/dev/null || echo '{}' > /tmp/control.json
             python3 - <<'CONTROL'
@@ -80,20 +86,31 @@ jobs:
             if op in ['tap','swipe','text','keyevent'] and isinstance(args,list):
              subprocess.run(['adb','shell','input',op]+[str(x) for x in args],timeout=15)
             elif op=='record':
-             subprocess.Popen(['adb','shell','screenrecord','--time-limit','180','--bit-rate','4000000','/sdcard/match.mp4'],stdout=open('/tmp/record.log','w'),stderr=subprocess.STDOUT)
+             subprocess.Popen(['bash','/tmp/record-loop.sh'],stdout=open('/tmp/record.log','w'),stderr=subprocess.STDOUT)
+            elif op=='batch':
+             for a in args[:30]:
+              if a.get('op')=='wait':time.sleep(min(20,max(0,float(a.get('seconds',1)))))
+              elif a.get('op') in ['tap','swipe','text','keyevent']:
+               subprocess.run(['adb','shell','input',a['op']]+[str(x) for x in a.get('args',[])],timeout=15)
+            elif op=='finish':pathlib.Path('/tmp/finish').touch()
             elif op=='pullrecord':
              subprocess.run(['adb','pull','/sdcard/match.mp4','armshots/match.mp4'],timeout=30)
             old.write_text(str(seq));pathlib.Path('armshots/last-command.txt').write_text(json.dumps(d))
           except Exception as e:pathlib.Path('armshots/control-error.txt').write_text(str(e))
           CONTROL
+            sleep 2
             adb exec-out screencap -p > armshots/live.png
             adb shell dumpsys activity activities > armshots/activity.txt
             date -u > armshots/live-time.txt
             git add armshots
             git commit -qm "live-$i" || true
             git push -qf origin HEAD:live-play
-            sleep 7
+            test -f /tmp/finish && break
+            sleep 5
           done
+          touch /tmp/stoprecord
+          sleep 62
+          adb shell ls /sdcard/game-*.mp4 | tr -d '\r' | while read f; do adb pull "$f" armshots/ || true; done
           adb pull /sdcard/match.mp4 armshots/match.mp4 || true
           adb pull /sdcard/clash-launch.mp4 armshots/clash-launch.mp4 || true
           adb logcat -b all -d > armshots/logcat.txt
