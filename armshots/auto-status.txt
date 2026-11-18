@@ -1,1 +1,1 @@
-1367 start_battle ladder=False
+1419 earned_currency_upgrade ladder=False
