@@ -1,1 +1,1 @@
-1085 earned_currency_upgrade ladder=False
+1243 tutorial_dialog ladder=False
