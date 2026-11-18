@@ -5,3 +5,4 @@
 14:25:34 stock-bridge-unmodified
 14:25:53 downloading-arm64
 14:26:32 install-rc=0
+14:26:47 launched

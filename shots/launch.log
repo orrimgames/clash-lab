@@ -1,0 +1,15 @@
+  bash arg: -p
+  bash arg: com.supercell.clashroyale
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+args: [-p, com.supercell.clashroyale, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.supercell.clashroyale"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.supercell.clashroyale"
+data="android.intent.category.LAUNCHER"
+Events injected: 1
+## Network stats: elapsed time=128ms (0ms mobile, 0ms wifi, 128ms not connected)

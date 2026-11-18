@@ -1,0 +1,326 @@
+Activity Resolver Table:
+  Schemes:
+      clashroyale:
+        e958802 com.supercell.clashroyale/com.supercell.titan.GameApp filter f98c949
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "clashroyale"
+      http:
+        e958802 com.supercell.clashroyale/com.supercell.titan.GameApp filter 8a7b513
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "link.clashroyale.com": -1
+          Authority: "link.clashroyale.com": -1
+          Authority: "link-staging.clashroyale.com": -1
+          Authority: "link-staging.clashroyale.com": -1
+          AutoVerify=true
+      https:
+        e958802 com.supercell.clashroyale/com.supercell.titan.GameApp filter 8a7b513
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "link.clashroyale.com": -1
+          Authority: "link.clashroyale.com": -1
+          Authority: "link-staging.clashroyale.com": -1
+          Authority: "link-staging.clashroyale.com": -1
+          AutoVerify=true
+        e958802 com.supercell.clashroyale/com.supercell.titan.GameApp filter 8d8224e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "clashroyale.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /r1uX}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e958802 com.supercell.clashroyale/com.supercell.titan.GameApp filter 8461350
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        22b5881 com.supercell.clashroyale/androidx.profileinstaller.ProfileInstallReceiver filter ba57714
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      EXTRA_CHOSEN_COMPONENT:
+        11bb105 com.supercell.clashroyale/dev.fluttercommunity.plus.share.SharePlusPendingIntent filter 798155a
+          Action: "EXTRA_CHOSEN_COMPONENT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        22b5881 com.supercell.clashroyale/androidx.profileinstaller.ProfileInstallReceiver filter 6322d26
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        fdeb38b com.supercell.clashroyale/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 508fc68
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        4ce8f6f com.supercell.clashroyale/zendesk.support.DeepLinkingBroadcastReceiver filter a81147c
+          Action: "zendesk.support"
+      androidx.profileinstaller.action.SKIP_FILE:
+        22b5881 com.supercell.clashroyale/androidx.profileinstaller.ProfileInstallReceiver filter e82fd67
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        22b5881 com.supercell.clashroyale/androidx.profileinstaller.ProfileInstallReceiver filter d33fbbd
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        703f5b2 com.supercell.clashroyale/com.supercell.titan.PushMessageService filter b380903
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4ecf080 com.supercell.clashroyale/com.google.firebase.messaging.FirebaseMessagingService filter d2996b9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.supercell.clashroyale:
+    ID: 673da86e-fc32-4a4e-9941-72d7b11558d1
+    Signatures: [59:EA:9D:ED:5F:79:29:8A:50:10:3D:25:44:97:CA:71:CA:80:33:24:92:C7:49:37:50:44:87:9B:8F:09:93:57]
+    Domain verification state:
+      link-staging.clashroyale.com: verified
+      link.clashroyale.com: verified
+      clashroyale.onelink.me: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          link-staging.clashroyale.com
+          link.clashroyale.com
+          clashroyale.onelink.me
+
+Permissions:
+  Permission [com.supercell.clashroyale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (3abdffe):
+    sourcePackage=com.supercell.clashroyale
+    uid=10209 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ae1f35f com.supercell.clashroyale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.supercell.clashroyale/io.sentry.android.core.SentryInitProvider:
+    Provider{4d5c1ac com.supercell.clashroyale/io.sentry.android.core.SentryInitProvider}
+  com.supercell.clashroyale/zendesk.messaging.android.internal.ZendeskFileProvider:
+    Provider{70e0e75 com.supercell.clashroyale/zendesk.messaging.android.internal.ZendeskFileProvider}
+  com.supercell.clashroyale/zendesk.support.SupportSdkStartupProvider:
+    Provider{ce1fe0a com.supercell.clashroyale/zendesk.support.SupportSdkStartupProvider}
+  com.supercell.clashroyale/com.supercell.id.scid_plugin.platform_interface.SharedDataContentProvider:
+    Provider{d5c667b com.supercell.clashroyale/com.supercell.id.scid_plugin.platform_interface.SharedDataContentProvider}
+  com.supercell.clashroyale/io.sentry.ndk.SentryNdkPreloadProvider:
+    Provider{5b34c98 com.supercell.clashroyale/io.sentry.ndk.SentryNdkPreloadProvider}
+  com.supercell.clashroyale/zendesk.core.MediaFileProvider:
+    Provider{43e1cf1 com.supercell.clashroyale/zendesk.core.MediaFileProvider}
+  com.supercell.clashroyale/zendesk.support.guide.GuideSdkStartupProvider:
+    Provider{ea9f0d6 com.supercell.clashroyale/zendesk.support.guide.GuideSdkStartupProvider}
+  com.supercell.clashroyale/com.squareup.picasso.PicassoProvider:
+    Provider{140ef57 com.supercell.clashroyale/com.squareup.picasso.PicassoProvider}
+  com.supercell.clashroyale/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{5dc9a44 com.supercell.clashroyale/com.google.firebase.provider.FirebaseInitProvider}
+  com.supercell.clashroyale/com.google.android.gms.games.provider.PlayGamesInitProvider:
+    Provider{a86972d com.supercell.clashroyale/com.google.android.gms.games.provider.PlayGamesInitProvider}
+  com.supercell.clashroyale/com.supercell.titan.NativeSharingFileProvider:
+    Provider{72c4462 com.supercell.clashroyale/com.supercell.titan.NativeSharingFileProvider}
+  com.supercell.clashroyale/androidx.startup.InitializationProvider:
+    Provider{7b29f3 com.supercell.clashroyale/androidx.startup.InitializationProvider}
+  com.supercell.clashroyale/dev.fluttercommunity.plus.share.ShareFileProvider:
+    Provider{2b16b0 com.supercell.clashroyale/dev.fluttercommunity.plus.share.ShareFileProvider}
+  com.supercell.clashroyale/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{f627929 com.supercell.clashroyale/io.sentry.android.core.SentryPerformanceProvider}
+
+ContentProvider Authorities:
+  [com.supercell.clashroyale.zendesk.messaging.provider]:
+    Provider{70e0e75 com.supercell.clashroyale/zendesk.messaging.android.internal.ZendeskFileProvider}
+      applicationInfo=ApplicationInfo{c8e44ae com.supercell.clashroyale}
+  [com.supercell.clashroyale.SentryInitProvider]:
+    Provider{4d5c1ac com.supercell.clashroyale/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{e14724f com.supercell.clashroyale}
+  [com.supercell.clashroyale.SentryPerformanceProvider]:
+    Provider{f627929 com.supercell.clashroyale/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{1a2eddc com.supercell.clashroyale}
+  [com.supercell.clashroyale.androidx-startup]:
+    Provider{7b29f3 com.supercell.clashroyale/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{b007ee5 com.supercell.clashroyale}
+  [com.supercell.clashroyale.zendesk.sdk.user.attachments]:
+    Provider{43e1cf1 com.supercell.clashroyale/zendesk.core.MediaFileProvider}
+      applicationInfo=ApplicationInfo{ffdfdba com.supercell.clashroyale}
+  [com.supercell.clashroyale.firebaseinitprovider]:
+    Provider{5dc9a44 com.supercell.clashroyale/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a4fe46b com.supercell.clashroyale}
+  [com.supercell.clashroyale.SentryNdkPreloadProvider]:
+    Provider{5b34c98 com.supercell.clashroyale/io.sentry.ndk.SentryNdkPreloadProvider}
+      applicationInfo=ApplicationInfo{15f0bc8 com.supercell.clashroyale}
+  [com.supercell.clashroyale.nativesharing.fileprovider]:
+    Provider{72c4462 com.supercell.clashroyale/com.supercell.titan.NativeSharingFileProvider}
+      applicationInfo=ApplicationInfo{fbf2461 com.supercell.clashroyale}
+  [com.supercell.clashroyale.zendesk.support.GuideSdkStartupProvider]:
+    Provider{ea9f0d6 com.supercell.clashroyale/zendesk.support.guide.GuideSdkStartupProvider}
+      applicationInfo=ApplicationInfo{57e3b86 com.supercell.clashroyale}
+  [com.supercell.clashroyale.playgamesinitprovider]:
+    Provider{a86972d com.supercell.clashroyale/com.google.android.gms.games.provider.PlayGamesInitProvider}
+      applicationInfo=ApplicationInfo{c865c47 com.supercell.clashroyale}
+  [com.supercell.clashroyale.flutter.share_provider]:
+    Provider{2b16b0 com.supercell.clashroyale/dev.fluttercommunity.plus.share.ShareFileProvider}
+      applicationInfo=ApplicationInfo{b3d1c74 com.supercell.clashroyale}
+  [com.supercell.clashroyale.zendesk.support.SupportSdkStartupProvider]:
+    Provider{ce1fe0a com.supercell.clashroyale/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{d68a59d com.supercell.clashroyale}
+  [com.supercell.clashroyale.id.shareddata]:
+    Provider{d5c667b com.supercell.clashroyale/com.supercell.id.scid_plugin.platform_interface.SharedDataContentProvider}
+      applicationInfo=ApplicationInfo{c728a12 com.supercell.clashroyale}
+  [com.supercell.clashroyale.com.squareup.picasso]:
+    Provider{140ef57 com.supercell.clashroyale/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{ec275e3 com.supercell.clashroyale}
+
+Key Set Manager:
+  [com.supercell.clashroyale]
+      Signing KeySets: 62
+
+Packages:
+  Package [com.supercell.clashroyale] (7495087):
+    appId=10209
+    pkg=Package{9498be0 com.supercell.clashroyale}
+    codePath=/data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==
+    resourcePath=/data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==
+    legacyNativeLibraryDir=/data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=160635013 minSdk=32 targetSdk=36
+    minExtensionVersions=[]
+    versionName=160635013
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi, install_time_asset_pack]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.supercell.brawlstars, com.supercell.boombeach, com.supercell.clashofclans, com.supercell.clashroyale, com.supercell.hayday, com.supercell.squad, com.supercell.moco, com.supercell.id.dev, com.supercell.id.dev.debug2, com.supercell.id.dev.debug3, com.supercell.id.flutter_test_app, com.supercell.squad.integration_v2, com.facebook.katana, com.instagram.android, com.facebook.lite, com.samsung.android.mapsagent]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=*/* }, Intent { act=android.intent.action.VIEW dat=mailto:xx }, Intent { act=android.intent.action.VIEW dat=tel:xx }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.OPEN_DOCUMENT dat=content://*/... typ=*/* }, Intent { act=android.intent.action.GET_CONTENT }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=com.appsflyer.referrer.INSTALL_PROVIDER }, Intent { act=android.accessibilityservice.AccessibilityService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      app-inputmapping
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2026-11-18 14:26:18
+    lastUpdateTime=2026-11-18 14:26:28
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{7eb860c version:3, signatures:[48310a8e], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.supercell.clashroyale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.samsung.android.mapsagent.permission.READ_APP_INFO
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.supercell.clashroyale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      com.android.vending.BILLING
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.supercell.id.SHARED_DATA_ACCESS
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.READ_BASIC_PHONE_STATE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.supercell.clashroyale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.READ_BASIC_PHONE_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=58073 deDataInode=58076 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.supercell.clashroyale
+      firstInstallTime=2026-11-18 14:26:28
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-CS4d.frro
+        /data/resource-cache/com.android.systemui-accent-p4QJ.frro
+        /data/resource-cache/com.android.systemui-dynamic-S4hc.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.as:
+      com.supercell.clashroyale
+    com.google.android.settings.intelligence:
+      com.supercell.clashroyale
+    com.google.android.apps.messaging:
+      com.supercell.clashroyale
+    com.supercell.clashroyale:
+      com.google.android.documentsui
+      com.google.android.dialer
+      com.android.chrome
+      com.android.camera2
+      com.google.android.calendar
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.apps.photos
+      com.google.android.gm
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.supercell.clashroyale]
+    path: /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/base.apk
+      x86_64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~2oxO3HXKo8ApBG57wwhAow==/com.supercell.clashroyale-MKtk12PU1N0CdZ6Vm9M7Ww==/oat/x86_64/base.odex]
+
+Compiler stats:
+  [com.supercell.clashroyale]
+     base.apk - 2205
