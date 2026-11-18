@@ -27,7 +27,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff212121
         backgroundColor=ff303030 statusBarColor=ff000000 navigationBarColor=808080
        backgroundColorFloating=ff424242
-      launchFailed=false launchCount=1 lastLaunchTime=-19m17s822ms
+      launchFailed=false launchCount=1 lastLaunchTime=-19m28s841ms
       mHaveState=false mIcicle=null
       state=RESUMED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -43,7 +43,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
       mNumInterestingWindows=2 mNumDrawnWindows=2 allDrawn=true lastAllDrawn=true)
       startingData=null firstWindowDrawn=true mIsExiting=false
-      nowVisible=true lastVisibleTime=-19m17s210ms
+      nowVisible=true lastVisibleTime=-19m28s229ms
       resizeMode=RESIZE_MODE_RESIZEABLE
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_SUPPORTED_METADATA
@@ -77,7 +77,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
         backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
        backgroundColorFloating=fff1f0f7
-      launchFailed=false launchCount=0 lastLaunchTime=-22m3s229ms
+      launchFailed=false launchCount=0 lastLaunchTime=-22m14s248ms
       mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=6088]
       state=STOPPED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -93,7 +93,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
       mAppStopped=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-      nowVisible=false lastVisibleTime=-19m20s121ms
+      nowVisible=false lastVisibleTime=-19m31s140ms
       resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
@@ -129,7 +129,7 @@ Display #0 (activities from top to bottom):
         taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
           backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
          backgroundColorFloating=fff1f0f7
-        launchFailed=false launchCount=0 lastLaunchTime=-27m56s908ms
+        launchFailed=false launchCount=0 lastLaunchTime=-28m7s927ms
         mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=5016]
         state=STOPPED delayedResume=false finishing=false
         keysPaused=false inHistory=true idle=true
@@ -145,7 +145,7 @@ Display #0 (activities from top to bottom):
         mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
         mAppStopped=true
         mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-        nowVisible=false lastVisibleTime=-22m41s595ms
+        nowVisible=false lastVisibleTime=-22m52s614ms
         connections={ConnectionRecord{14cb8ed u0 com.android.launcher3/com.android.quickstep.TouchInteractionService:@6c32b04 flags=0x0}}
         resizeMode=RESIZE_MODE_RESIZEABLE
         mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
@@ -311,7 +311,8 @@ ActivityTaskSupervisor state:
       mSwipeDistanceThreshold=48
     Looper state:
       Looper (android.ui, tid 22) {8d27c5f}
-        (Total messages: 0, polling=true, quitting=false)
+        Message 0: { when=+278ms what=3 target=android.view.GestureDetector$GestureHandler }
+        (Total messages: 1, polling=true, quitting=false)
 
   DisplayRotation
     mCurrentAppOrientation=SCREEN_ORIENTATION_SENSOR_PORTRAIT
