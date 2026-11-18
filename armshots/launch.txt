@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.supercell.clashroyale/com.supercell.titan.GameApp }
+Status: ok
+LaunchState: COLD
+Activity: com.supercell.clashroyale/com.supercell.titan.GameApp
+TotalTime: 733
+WaitTime: 736
+Complete
