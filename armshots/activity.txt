@@ -1,10 +1,61 @@
 ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
 Display #0 (activities from top to bottom):
-  * Task{f8cf1d9 #1 type=home U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
-    * Task{28931a5 #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+  * Task{a1b7ab9 #9 type=standard A=1000:com.android.settings U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+    mLastPausedActivity: ActivityRecord{a7e480 u0 com.android.settings/.applications.InstalledAppDetails t-1 f}}
+    mLastNonFullscreenBounds=Rect(132, 256 - 588, 976)
+    isSleeping=false
+    topResumedActivity=ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}
+    * Hist  #0: ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}
+      packageName=com.android.settings processName=com.android.settings
+      launchedFromUid=1000 launchedFromPackage=com.android.settings launchedFromFeature=null userId=0
+      app=ProcessRecord{1bba620 1191:com.android.settings/1000}
+      Intent { cmp=com.android.settings/.spa.SpaActivity (has extras) }
+      rootOfTask=true task=Task{a1b7ab9 #9 type=standard A=1000:com.android.settings}
+      taskAffinity=1000:com.android.settings
+      mActivityComponent=com.android.settings/.spa.SpaActivity
+      baseDir=/system/system_ext/priv-app/Settings/Settings.apk
+      dataDir=/data/user_de/0/com.android.settings
+      stateNotNeeded=false componentSpecified=false mActivityType=standard
+      compat={320dpi} labelRes=0x7f13113e icon=0x7f0801d0 theme=0x7f1403e9
+      mLastReportedConfigurations:
+        mGlobalConfig={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.36 fontWeightAdjustment=0}
+        mOverrideConfig={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.1 fontWeightAdjustment=0}
+      CurrentConfiguration={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.1 fontWeightAdjustment=0}
+      taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
+        backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
+       backgroundColorFloating=fff1f0f7
+      launchFailed=false launchCount=1 lastLaunchTime=-1s989ms
+      mHaveState=false mIcicle=null
+      state=RESUMED delayedResume=false finishing=false
+      keysPaused=false inHistory=true idle=true
+      occludesParent=true noDisplay=false immersive=false launchMode=0
+      frozenBeforeDestroy=false forceNewConfig=false
+      mActivityType=standard
+      mImeInsetsFrozenUntilStartInput=false
+      windows=[Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}]
+      windowType=2
+      mOccludesParent=true
+      overrideOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+      requestedOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+      mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
+      mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
+      startingData=null firstWindowDrawn=true mIsExiting=false
+      nowVisible=true lastVisibleTime=-1s730ms
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+      supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
+      configChanges=0xd83
+      neverSandboxDisplayApis=false
+      alwaysSandboxDisplayApis=false
+      areBoundsLetterboxed=false
+      mCameraCompatControlState=hidden
+      mCameraCompatControlEnabled=false
+
+  * Task{f8cf1d9 #1 type=home U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
+    * Task{28931a5 #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
+      mLastPausedActivity: ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
       mLastNonFullscreenBounds=Rect(132, 256 - 588, 976)
       isSleeping=false
-      topResumedActivity=ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
       * Hist  #0: ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
         packageName=com.android.launcher3 processName=com.android.launcher3
         launchedFromUid=0 launchedFromPackage=null launchedFromFeature=null userId=0
@@ -25,23 +76,23 @@ Display #0 (activities from top to bottom):
         taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
           backgroundColor=fff1f0f7 statusBarColor=0 navigationBarColor=0
          backgroundColorFloating=fff1f0f7
-        launchFailed=false launchCount=0 lastLaunchTime=-5m41s304ms
-        mHaveState=false mIcicle=null
-        state=RESUMED delayedResume=false finishing=false
+        launchFailed=false launchCount=0 lastLaunchTime=-5m55s669ms
+        mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=5016]
+        state=STOPPED delayedResume=false finishing=false
         keysPaused=false inHistory=true idle=true
         occludesParent=true noDisplay=false immersive=false launchMode=2
         frozenBeforeDestroy=false forceNewConfig=false
         mActivityType=home
-        mImeInsetsFrozenUntilStartInput=false
+        mImeInsetsFrozenUntilStartInput=true
         windows=[Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}]
-        windowType=2 waitingToShow=true
+        windowType=2
         mOccludesParent=true
         overrideOrientation=SCREEN_ORIENTATION_NOSENSOR
         requestedOrientation=SCREEN_ORIENTATION_NOSENSOR
-        mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
+        mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
+        mAppStopped=true
         mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-        startingData=null firstWindowDrawn=true mIsExiting=false
-        nowVisible=true lastVisibleTime=-25s991ms
+        nowVisible=false lastVisibleTime=-40s356ms
         connections={ConnectionRecord{14cb8ed u0 com.android.launcher3/com.android.quickstep.TouchInteractionService:@6c32b04 flags=0x0}}
         resizeMode=RESIZE_MODE_RESIZEABLE
         mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
@@ -79,7 +130,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff212121
         backgroundColor=ff303030 statusBarColor=ff000000 navigationBarColor=808080
        backgroundColorFloating=ff424242
-      launchFailed=false launchCount=0 lastLaunchTime=-5m13s229ms
+      launchFailed=false launchCount=0 lastLaunchTime=-5m27s593ms
       mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=868]
       state=STOPPED delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -95,7 +146,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
       mAppStopped=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-      nowVisible=false lastVisibleTime=-5m12s480ms
+      nowVisible=false lastVisibleTime=-5m26s844ms
       resizeMode=RESIZE_MODE_RESIZEABLE
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_SUPPORTED_METADATA
@@ -117,30 +168,30 @@ Display #0 (activities from top to bottom):
       isSleeping=false
 
   Resumed activities in task display areas (from top to bottom):
-    Resumed: ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
+    Resumed: ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}
 
-  ResumedActivity: ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
+  ResumedActivity: ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}
 
 ActivityTaskSupervisor state:
-  topDisplayFocusedRootTask=Task{f8cf1d9 #1 type=home}
+  topDisplayFocusedRootTask=Task{a1b7ab9 #9 type=standard A=1000:com.android.settings}
   Display: mDisplayId=0 (organized)
     init=720x1280 320dpi mMinSizeOfResizeableTaskDp=220 cur=720x1280 app=720x1184 rng=720x672-1184x1136
     deferred=false mLayoutNeeded=false mTouchExcludeRegion=SkRegion((0,0,720,1280))
 
   mLastOrientationSource=WindowedMagnification:0:31@117040931
-  deepestLastOrientationSource=ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
+  deepestLastOrientationSource=ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}
   overrideConfig={1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.35 fontWeightAdjustment=0}
-  mLayoutSeq=90
-  mCurrentFocus=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
-  mFocusedApp=ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
+  mLayoutSeq=106
+  mCurrentFocus=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
+  mFocusedApp=ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}
 
   mHoldScreenWindow=null
-  mObscuringWindow=Window{a72a69d u0 com.android.systemui.wallpapers.ImageWallpaper}
+  mObscuringWindow=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
   mLastWakeLockHoldingWindow=null
   mLastWakeLockObscuringWindow=null
 
   displayId=0
-  mWallpaperTarget=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+  mWallpaperTarget=null
   mLastWallpaperX=0.0 mLastWallpaperY=0.5
 
   Display areas in top down Z order:
@@ -188,12 +239,15 @@ ActivityTaskSupervisor state:
   Task display areas in top down Z order:
     TaskDisplayArea DefaultTaskDisplayArea
       overrideConfig={0.0 ?mcc0mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mMaxBounds=Rect(0, 0 - 0, 0) mDisplayRotation=undefined mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=undefined} ?fontWeightAdjustment}
-      mPreferredTopFocusableRootTask=Task{f8cf1d9 #1 type=home}
-      mLastFocusedRootTask=Task{f8cf1d9 #1 type=home}
+      mPreferredTopFocusableRootTask=Task{a1b7ab9 #9 type=standard A=1000:com.android.settings}
+      mLastFocusedRootTask=Task{a1b7ab9 #9 type=standard A=1000:com.android.settings}
       Application tokens in top down Z order:
-      * Task{f8cf1d9 #1 type=home U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      * Task{a1b7ab9 #9 type=standard A=1000:com.android.settings U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
         bounds=[0,0][720,1280]
-        * Task{28931a5 #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        * ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}
+      * Task{f8cf1d9 #1 type=home U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
+        bounds=[0,0][720,1280]
+        * Task{28931a5 #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
           bounds=[0,0][720,1280]
           * ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
       * Task{5e048a7 #8 type=standard A=10087:com.supercell.clashroyale U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
@@ -224,6 +278,7 @@ ActivityTaskSupervisor state:
     mAwake=true mScreenOnEarly=true mScreenOnFully=true
     mKeyguardDrawComplete=true mWindowManagerDrawComplete=true
     mHdmiPlugged=false
+    mLastAppearance=LIGHT_STATUS_BARS LIGHT_NAVIGATION_BARS
     mLastBehavior=DEFAULT
     mShowingDream=false mDreamingLockscreen=false
     mStatusBar=Window{df1ce2a u0 StatusBar}
@@ -235,16 +290,16 @@ ActivityTaskSupervisor state:
     mNavigationBarPosition=4
     mTopGestureHost=Window{df1ce2a u0 StatusBar}
     mBottomGestureHost=Window{18fb00e u0 NavigationBar0}
-    mFocusedWindow=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
-    mTopFullscreenOpaqueWindowState=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
-    mSystemBarColorApps={ActivityRecord{367b39c u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}}
-    mNavBarColorWindowCandidate=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
-    mNavBarBackgroundWindowCandidate=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+    mFocusedWindow=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
+    mTopFullscreenOpaqueWindowState=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
+    mSystemBarColorApps={ActivityRecord{57bc09d u0 com.android.settings/.spa.SpaActivity t9}}
+    mNavBarColorWindowCandidate=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
+    mNavBarBackgroundWindowCandidate=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
     mLastStatusBarAppearanceRegions=
-      AppearanceRegion{ bounds=[0,0][720,1280]}
+      AppearanceRegion{LIGHT_STATUS_BARS bounds=[0,0][720,1280]}
     mLastLetterboxDetails=
     mStatusBarBackgroundWindows=
-      Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+      Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
     mTopIsFullscreen=false
     mForceShowNavigationBarEnabled=false mAllowLockscreenWhenOn=false
     mRemoteInsetsControllerControlsSystemBars=false
@@ -262,8 +317,8 @@ ActivityTaskSupervisor state:
         (Total messages: 0, polling=true, quitting=false)
 
   DisplayRotation
-    mCurrentAppOrientation=SCREEN_ORIENTATION_NOSENSOR
-    mLastOrientation=5
+    mCurrentAppOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+    mLastOrientation=-1
     mRotation=0 mDeferredRotationPauseCount=0
     mLandscapeRotation=ROTATION_90 mSeascapeRotation=ROTATION_270
     mPortraitRotation=ROTATION_0 mUpsideDownRotation=ROTATION_180
@@ -302,20 +357,20 @@ ActivityTaskSupervisor state:
         InsetsSource id=f6b50006 type=tappableElement frame=[0,0][720,48] visible=true flags=
         InsetsSource id=3 type=ime frame=[0,0][0,0] visible=false flags=
     Control map:
-      Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}:
+      Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}:
         InsetsSourceControl: {3 mType=ime mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0}}
-        InsetsSourceControl: {c6c70001 mType=navigationBars mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96}}
-        InsetsSourceControl: {f6b50000 mType=statusBars mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0}}
+        InsetsSourceControl: {c6c70001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96}}
+        InsetsSourceControl: {f6b50000 mType=statusBars initiallyVisible mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0}}
     InsetsSourceProviders:
       ImeInsetsSourceProvider
         mSource=InsetsSource id=3 type=ime frame=[0,0][0,0] visible=false flags=
         mSourceFrame=Rect(40, 1280 - 680, 1280)
-        mControl=InsetsSourceControl mId=3 mType=ime mLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x3abf19b mInitiallyVisible=false mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl mId=3 mType=ime mLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0xf0a7679 mInitiallyVisible=false mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} mSkipAnimationOnce=false
         mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} stale
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{fb06f34 u0 InputMethod}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0x3abf19b
-        mControlTarget=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=fb06f34 InputMethod)/@0xb7f4aa0 - animation-leash of insets_animation)/@0xf0a7679
+        mControlTarget=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
         mImeShowing=false
       InsetsSourceProvider
         mSource=InsetsSource id=f6b50006 type=tappableElement frame=[0,0][720,48] visible=true flags=
@@ -330,12 +385,12 @@ ActivityTaskSupervisor state:
       InsetsSourceProvider
         mSource=InsetsSource id=f6b50000 type=statusBars frame=[0,0][720,48] visible=true flags=
         mSourceFrame=Rect(0, 0 - 720, 48)
-        mControl=InsetsSourceControl mId=f6b50000 mType=statusBars mLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0xcb54938 mInitiallyVisible=false mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl mId=f6b50000 mType=statusBars mLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0x2237fbe mInitiallyVisible=true mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0} mSkipAnimationOnce=false
         mInsetsHint=Insets{left=0, top=48, right=0, bottom=0}
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{df1ce2a u0 StatusBar}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0xcb54938
-        mControlTarget=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=df1ce2a StatusBar)/@0x1044c3 - animation-leash of insets_animation)/@0x2237fbe
+        mControlTarget=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
       InsetsSourceProvider
         mSource=InsetsSource id=c6c70024 type=systemGestures frame=[0,0][0,0] visible=true flags=
         mSourceFrame=Rect(0, 0 - 0, 0)
@@ -359,12 +414,12 @@ ActivityTaskSupervisor state:
       InsetsSourceProvider
         mSource=InsetsSource id=c6c70001 type=navigationBars frame=[0,1184][720,1280] visible=true flags=
         mSourceFrame=Rect(0, 1184 - 720, 1280)
-        mControl=InsetsSourceControl mId=c6c70001 mType=navigationBars mLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0xecf6d11 mInitiallyVisible=false mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl mId=c6c70001 mType=navigationBars mLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0x4fd781f mInitiallyVisible=true mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96} mSkipAnimationOnce=false
         mInsetsHint=Insets{left=0, top=0, right=0, bottom=96}
         mIsLeashReadyForDispatching=true
         mWindowContainer=Window{18fb00e u0 NavigationBar0}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0xecf6d11
-        mControlTarget=Window{5106c59 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=18fb00e NavigationBar0)/@0xdb2e140 - animation-leash of insets_animation)/@0x4fd781f
+        mControlTarget=Window{196e136 u0 com.android.settings/com.android.settings.spa.SpaActivity}
   InsetsPolicy
     status: WINDOW_STATE_SHOWING
     nav: WINDOW_STATE_SHOWING
@@ -381,7 +436,7 @@ ActivityTaskSupervisor state:
     mLockTaskModeTasks=
     mLockTaskPackages (userId:packages)=
 
-  mCurTaskIdForUser={0=8}
+  mCurTaskIdForUser={0=9}
   mUserRootTaskInFront={}
   mVisibilityTransactionDepth=0
   isHomeRecentsComponent=true
@@ -394,6 +449,7 @@ ActivityTaskSupervisor state:
         (multi-window) Task{62cdeec #3 type=undefined}
         (multi-window) Task{3b57d4a #4 type=undefined}
         (fullscreen) Task{5e048a7 #8 type=standard A=10087:com.supercell.clashroyale}
+        (fullscreen) Task{a1b7ab9 #9 type=standard A=1000:com.android.settings}
 
-  VisibleActivityProcess:[ ProcessRecord{b088647 926:com.android.launcher3/u0a61}]
-  NumNonAppVisibleWindowUidMap:[ 10065:3]
+  VisibleActivityProcess:[ ProcessRecord{1bba620 1191:com.android.settings/1000}]
+  NumNonAppVisibleWindowUidMap:[ 10065:2]
