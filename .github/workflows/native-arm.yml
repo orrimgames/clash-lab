@@ -27,7 +27,9 @@ jobs:
           getconf PAGESIZE | tee armshots/pagesize.txt
           ls -l /dev/*binder* | tee armshots/binder.txt || true
           sudo docker run -d --name android --privileged -p 127.0.0.1:5555:5555 redroid/redroid:14.0.0-latest androidboot.use_memfd=1 androidboot.redroid_gpu_mode=guest androidboot.redroid_width=720 androidboot.redroid_height=1280
-          for i in $(seq 1 60); do adb connect 127.0.0.1:5555 || true; test "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = 1 && break; sleep 5; done
+          export ANDROID_SERIAL=127.0.0.1:5555
+          adb devices -l | tee armshots/adb-devices.txt
+          for i in $(seq 1 60); do adb connect 127.0.0.1:5555 || true; test "$(timeout 10 adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = 1 && break; sleep 5; done
           adb shell getprop > armshots/props.txt
           adb exec-out screencap -p > armshots/001-boot.png
           python3 - <<'PY'
