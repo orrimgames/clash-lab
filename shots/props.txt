@@ -1,0 +1,8 @@
+++ tr -d '\r'
+++ adb shell getprop ro.product.cpu.abilist
++ echo 'abilist: x86_64,arm64-v8a'
+abilist: x86_64,arm64-v8a
+++ adb shell getprop ro.dalvik.vm.native.bridge
+++ tr -d '\r'
++ echo 'bridge: libndk_translation.so'
+bridge: libndk_translation.so

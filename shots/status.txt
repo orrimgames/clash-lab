@@ -1,3 +1,5 @@
 14:24:27 start-v54-play35-arm64
 14:24:27 installing-play35-image
 14:24:57 api32-started
+14:25:29 booted
+14:25:34 stock-bridge-unmodified
