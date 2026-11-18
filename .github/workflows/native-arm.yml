@@ -1,4 +1,5 @@
 name: native-arm
+# Bounded follow-up: verify tutorial unlock and normal matchmaking controls.
 on:
   workflow_dispatch:
   push:
