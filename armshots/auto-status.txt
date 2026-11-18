@@ -1,1 +1,1 @@
-1795 start_battle ladder=False
+1804 start_battle ladder=False
