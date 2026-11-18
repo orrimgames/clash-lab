@@ -40,8 +40,9 @@ jobs:
           target: google_apis
           arch: arm64-v8a
           force-avd-creation: true
+          cores: 4
           emulator-boot-timeout: 3600
-          emulator-options: -no-snapshot-save -no-window -gpu guest -noaudio -no-boot-anim -memory 3072 -skin 720x1280
+          emulator-options: -no-snapshot-save -no-window -gpu guest -noaudio -no-boot-anim -memory 2048 -skin 480x800
           disable-animations: true
           script: |
             mkdir -p shots
