@@ -1,1 +1,1 @@
-1708 result ladder=False
+1795 start_battle ladder=False
