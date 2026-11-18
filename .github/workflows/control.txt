@@ -1,1 +1,1 @@
-{"seq": 262, "op": "sealed", "payload": "gAAAAABq_hU2PalRwoMkP5YdVbBtWvudTtf8xzA7Xa9UoeF9t6yLqhbxG-_1OIY1AdgI5nkwusMTikWdlsAdpuxJScd4rCEAb6lPslA7vtFiKW5ogfVuqty_tb9OjXCaHkAQ_5GnMfDf"}
+{"seq":263,"op":"batch","args":[{"op":"tap","args":[550,400]},{"op":"wait","seconds":1},{"op":"tap","args":[360,815]},{"op":"wait","seconds":6}]}
