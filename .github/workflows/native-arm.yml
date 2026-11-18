@@ -63,11 +63,40 @@ jobs:
           adb shell input tap 550 400
           sleep 3
           adb shell input tap 360 815
-          for i in $(seq 1 7); do sleep 20; adb exec-out screencap -p > armshots/$(printf '%03d' $((i+1)))-game.png; done
-          wait $RECORDPID
-          adb pull /sdcard/clash-launch.mp4 armshots/clash-launch.mp4
+          git config user.name orrimgames
+          git config user.email bot@users.noreply.github.com
+          git checkout --orphan live-play
+          git rm -rf --cached .
+          LAST=0
+          for i in $(seq 1 100); do
+            git fetch -q origin main
+            git show FETCH_HEAD:.github/workflows/control.txt > /tmp/control.json 2>/dev/null || echo '{}' > /tmp/control.json
+            python3 - <<'CONTROL'
+          import json,subprocess,pathlib,time
+          try:
+           d=json.load(open('/tmp/control.json'));seq=d.get('seq',0);old=pathlib.Path('/tmp/lastseq')
+           if seq and str(seq)!=(old.read_text() if old.exists() else ''):
+            op=d.get('op');args=d.get('args',[])
+            if op in ['tap','swipe','text','keyevent'] and isinstance(args,list):
+             subprocess.run(['adb','shell','input',op]+[str(x) for x in args],timeout=15)
+            elif op=='record':
+             subprocess.Popen(['adb','shell','screenrecord','--time-limit','180','--bit-rate','4000000','/sdcard/match.mp4'],stdout=open('/tmp/record.log','w'),stderr=subprocess.STDOUT)
+            elif op=='pullrecord':
+             subprocess.run(['adb','pull','/sdcard/match.mp4','armshots/match.mp4'],timeout=30)
+            old.write_text(str(seq));pathlib.Path('armshots/last-command.txt').write_text(json.dumps(d))
+          except Exception as e:pathlib.Path('armshots/control-error.txt').write_text(str(e))
+          CONTROL
+            adb exec-out screencap -p > armshots/live.png
+            adb shell dumpsys activity activities > armshots/activity.txt
+            date -u > armshots/live-time.txt
+            git add armshots
+            git commit -qm "live-$i" || true
+            git push -qf origin HEAD:live-play
+            sleep 7
+          done
+          adb pull /sdcard/match.mp4 armshots/match.mp4 || true
+          adb pull /sdcard/clash-launch.mp4 armshots/clash-launch.mp4 || true
           adb logcat -b all -d > armshots/logcat.txt
-          adb shell dumpsys activity activities > armshots/activity.txt
       - name: Diagnostics
         if: always()
         run: |
